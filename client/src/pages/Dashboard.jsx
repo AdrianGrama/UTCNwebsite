@@ -144,8 +144,20 @@ const Dashboard = () => {
         {/* Coloana Dreaptă: Profil / Comenzi rapide */}
         <div>
           <h2>Profilul Meu</h2>
-          <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
+          <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: '1rem', position: 'relative', overflow: 'hidden' }}>
+            <img 
+              src="https://res.cloudinary.com/donhemyhq/image/upload/v1780085249/utcnlogo_lmiu8r.png" 
+              alt="UTCN Seal" 
+              style={{ 
+                position: 'absolute', 
+                right: '-10px', 
+                top: '-10px', 
+                height: '80px', 
+                opacity: 0.15,
+                pointerEvents: 'none'
+              }} 
+            />
+            <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem', zIndex: 1 }}>
               <div style={{
                 width: '60px',
                 height: '60px',
