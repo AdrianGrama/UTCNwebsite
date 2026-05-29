@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
+import { API_BASE_URL } from '../config';
+
 
 const Announcements = () => {
   const { user, token } = useAuth();
@@ -17,7 +19,7 @@ const Announcements = () => {
   const fetchAnnouncements = async () => {
     try {
       const headers = { 'Authorization': `Bearer ${token}` };
-      const res = await fetch('http://localhost:5001/api/announcements', { headers });
+      const res = await fetch(`${API_BASE_URL}/api/announcements`, { headers });
       const data = await res.json();
       if (res.ok) {
         setAnnouncements(data);
@@ -52,7 +54,7 @@ const Announcements = () => {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${token}`
       };
-      const res = await fetch('http://localhost:5001/api/announcements', {
+      const res = await fetch(`${API_BASE_URL}/api/announcements`, {
         method: 'POST',
         headers,
         body: JSON.stringify({ title, content, category })
@@ -77,7 +79,7 @@ const Announcements = () => {
     if (!window.confirm('Sigur doriți să ștergeți acest anunț?')) return;
     try {
       const headers = { 'Authorization': `Bearer ${token}` };
-      const res = await fetch(`http://localhost:5001/api/announcements/${id}`, {
+      const res = await fetch(`${API_BASE_URL}/api/announcements/${id}`, {
         method: 'DELETE',
         headers
       });

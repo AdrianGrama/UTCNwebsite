@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import { API_BASE_URL } from '../config';
+
 
 const Dashboard = () => {
   const { user, token } = useAuth();
@@ -14,11 +16,11 @@ const Dashboard = () => {
         const headers = { 'Authorization': `Bearer ${token}` };
 
         // Preluăm notele
-        const gradesRes = await fetch('http://localhost:5001/api/grades', { headers });
+        const gradesRes = await fetch(`${API_BASE_URL}/api/grades`, { headers });
         const gradesData = await gradesRes.json();
 
         // Preluăm anunțurile
-        const annRes = await fetch('http://localhost:5001/api/announcements', { headers });
+        const annRes = await fetch(`${API_BASE_URL}/api/announcements`, { headers });
         const annData = await annRes.json();
 
         if (gradesRes.ok) setGrades(gradesData);

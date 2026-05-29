@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
+import { API_BASE_URL } from '../config';
+
 
 const Grades = () => {
   const { user, token } = useAuth();
@@ -22,7 +24,7 @@ const Grades = () => {
   const fetchGrades = async () => {
     try {
       const headers = { 'Authorization': `Bearer ${token}` };
-      const res = await fetch('http://localhost:5001/api/grades', { headers });
+      const res = await fetch(`${API_BASE_URL}/api/grades`, { headers });
       const data = await res.json();
       if (res.ok) {
         setGrades(data);
@@ -38,7 +40,7 @@ const Grades = () => {
     if (user.role !== 'teacher') return;
     try {
       const headers = { 'Authorization': `Bearer ${token}` };
-      const res = await fetch('http://localhost:5001/api/grades/students', { headers });
+      const res = await fetch(`${API_BASE_URL}/api/grades/students`, { headers });
       const data = await res.json();
       if (res.ok) {
         setStudents(data);
@@ -98,13 +100,13 @@ const Grades = () => {
 
       let res;
       if (editingGrade) {
-        res = await fetch(`http://localhost:5001/api/grades/${editingGrade.id}`, {
+        res = await fetch(`${API_BASE_URL}/api/grades/${editingGrade.id}`, {
           method: 'PUT',
           headers,
           body: JSON.stringify(payload)
         });
       } else {
-        res = await fetch('http://localhost:5001/api/grades', {
+        res = await fetch(`${API_BASE_URL}/api/grades`, {
           method: 'POST',
           headers,
           body: JSON.stringify(payload)
@@ -127,7 +129,7 @@ const Grades = () => {
     if (!window.confirm('Sigur doriți să ștergeți această notă?')) return;
     try {
       const headers = { 'Authorization': `Bearer ${token}` };
-      const res = await fetch(`http://localhost:5001/api/grades/${id}`, {
+      const res = await fetch(`${API_BASE_URL}/api/grades/${id}`, {
         method: 'DELETE',
         headers
       });
