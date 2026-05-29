@@ -1,0 +1,93 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "username": "popescu.ion",
+      "password": "student123",
+      "role": "student",
+      "name": "Ion Popescu",
+      "group": "30331",
+      "email": "ion.popescu@student.utcluj.ro",
+      "specialization": "Calculatoare (Română)"
+    },
+    {
+      "id": "u2",
+      "username": "ionescu.maria",
+      "password": "student123",
+      "role": "student",
+      "name": "Maria Ionescu",
+      "group": "30332",
+      "email": "maria.ionescu@student.utcluj.ro",
+      "specialization": "Calculatoare (Engleză)"
+    },
+    {
+      "id": "u3",
+      "username": "dobra.fecior",
+      "password": "prof123",
+      "role": "teacher",
+      "name": "Prof. Dr. Ing. Dobra",
+      "email": "dobra@utcluj.ro",
+      "department": "Calculatoare"
+    }
+  ],
+  "grades": [
+    {
+      "id": "g1",
+      "studentId": "u1",
+      "subject": "Tehnologii Distribuite",
+      "grade": 9,
+      "credits": 5,
+      "date": "2026-05-15"
+    },
+    {
+      "id": "g2",
+      "studentId": "u1",
+      "subject": "Programare Web",
+      "grade": 10,
+      "credits": 4,
+      "date": "2026-05-20"
+    },
+    {
+      "id": "g3",
+      "studentId": "u2",
+      "subject": "Tehnologii Distribuite",
+      "grade": 8,
+      "credits": 5,
+      "date": "2026-05-15"
+    },
+    {
+      "id": "g4",
+      "studentId": "u2",
+      "subject": "Baze de Date",
+      "grade": 10,
+      "credits": 5,
+      "date": "2026-05-22"
+    }
+  ],
+  "announcements": [
+    {
+      "id": "a1",
+      "title": "Suspendare cursuri Tehnologii Distribuite",
+      "content": "Cursul de Tehnologii Distribuite din data de 1 Iunie se va recupera ulterior din cauza zilei libere legale.",
+      "author": "Prof. Dr. Ing. Dobra",
+      "category": "Administrativ",
+      "date": "2026-05-28T10:00:00.000Z"
+    },
+    {
+      "id": "a2",
+      "title": "Sesiune de restanțe - Toamnă",
+      "content": "Planificarea examenelor de restanță a fost publicată pe site-ul facultății. Vă rugăm să vă înscrieți până la data de 1 Septembrie.",
+      "author": "Secretariat",
+      "category": "Examene",
+      "date": "2026-05-25T14:30:00.000Z"
+    },
+    {
+      "id": "a3",
+      "title": "Burse de merit semestrul II",
+      "content": "Listele provizorii cu studenții beneficiari ai burselor de merit au fost afișate la avizierul facultății. Contestațiile se pot depune în termen de 3 zile lucrătoare.",
+      "author": "Decanat",
+      "category": "Burse",
+      "date": "2026-05-29T08:00:00.000Z"
+    }
+  ]
+}

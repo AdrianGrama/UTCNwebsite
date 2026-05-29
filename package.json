@@ -1,0 +1,14 @@
+{
+  "name": "utcnwebsite",
+  "version": "1.0.0",
+  "description": "UTCN Student & Professor Portal",
+  "scripts": {
+    "install:all": "yarn install && yarn --cwd server install && yarn --cwd client install",
+    "server": "yarn --cwd server dev",
+    "client": "yarn --cwd client dev",
+    "dev": "concurrently \"yarn server\" \"yarn client\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
