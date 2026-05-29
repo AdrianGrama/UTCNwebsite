@@ -20,7 +20,10 @@ const Navbar = () => {
     <nav className="navbar">
       <Link to="/" className="navbar-brand">
         <img 
-          src="https://res.cloudinary.com/donhemyhq/image/upload/v1780085329/logo2_q0ibgi.png" 
+          src={theme === 'dark' 
+            ? 'https://res.cloudinary.com/donhemyhq/image/upload/v1780085546/logo4_xvuart.png' 
+            : 'https://res.cloudinary.com/donhemyhq/image/upload/v1780085329/logo2_q0ibgi.png'
+          } 
           alt="UTCN Logo" 
           style={{ height: '32px', width: 'auto', marginRight: '8px' }} 
         />

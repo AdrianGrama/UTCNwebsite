@@ -8,7 +8,7 @@ const Login = () => {
   const [rememberMe, setRememberMe] = useState(false);
   const [error, setError] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const { login, user } = useAuth();
+  const { login, user, theme } = useAuth();
   const navigate = useNavigate();
 
   // Citim username-ul salvat din localStorage la pornire
@@ -51,7 +51,10 @@ const Login = () => {
       <div className="card login-card">
         <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '1rem' }}>
           <img 
-            src="https://res.cloudinary.com/donhemyhq/image/upload/v1780085330/logo3_wraojl.png" 
+            src={theme === 'dark' 
+              ? 'https://res.cloudinary.com/donhemyhq/image/upload/v1780085546/logo4_xvuart.png' 
+              : 'https://res.cloudinary.com/donhemyhq/image/upload/v1780085330/logo3_wraojl.png'
+            } 
             alt="UTCN Logo" 
             style={{ height: '72px', width: 'auto' }} 
           />
