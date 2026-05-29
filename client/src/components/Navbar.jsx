@@ -19,7 +19,12 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <Link to="/" className="navbar-brand">
-        🎓 UTCN Portal
+        <img 
+          src="https://res.cloudinary.com/donhemyhq/image/upload/v1780085249/utcnlogo_lmiu8r.png" 
+          alt="UTCN Logo" 
+          style={{ height: '32px', width: 'auto', marginRight: '4px' }} 
+        />
+        <span>Portal UTCN</span>
       </Link>
       <div className="navbar-links">
         <Link to="/" className={`navbar-link ${isActive('/')}`}>Dashboard</Link>

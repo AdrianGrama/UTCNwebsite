@@ -49,6 +49,13 @@ const Login = () => {
   return (
     <div className="login-wrapper">
       <div className="card login-card">
+        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '1rem' }}>
+          <img 
+            src="https://res.cloudinary.com/donhemyhq/image/upload/v1780085249/utcnlogo_lmiu8r.png" 
+            alt="UTCN Logo" 
+            style={{ height: '64px', width: 'auto' }} 
+          />
+        </div>
         <h2 style={{ textAlign: 'center', marginBottom: '0.5rem' }}>Autentificare</h2>
         <p style={{ textAlign: 'center', color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '2rem' }}>
           Portalul Studențesc UTCN

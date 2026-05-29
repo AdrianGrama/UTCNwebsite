@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-  /* Colors - Light Mode Default */
+  /* Colors - Light Mode Default (UTCN Red & Black) */
   --bg-primary: #f8fafc;
   --bg-secondary: #ffffff;
   --text-primary: #0f172a;
   --text-secondary: #475569;
-  --accent-primary: #3b82f6;
-  --accent-secondary: #6366f1;
-  --accent-gradient: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%);
+  --accent-primary: #dc2626; /* UTCN Red */
+  --accent-secondary: #171717; /* UTCN Black */
+  --accent-gradient: linear-gradient(135deg, #dc2626 0%, #171717 100%);
   --success: #10b981;
   --danger: #ef4444;
   --warning: #f59e0b;
@@ -27,16 +27,16 @@
 }
 
 [data-theme='dark'] {
-  /* Colors - Dark Mode Override */
+  /* Colors - Dark Mode Override (UTCN Red & Black) */
   --bg-primary: #090d16;
   --bg-secondary: #111827;
   --text-primary: #f8fafc;
   --text-secondary: #94a3b8;
-  --accent-primary: #60a5fa;
-  --accent-secondary: #818cf8;
-  --accent-gradient: linear-gradient(135deg, #60a5fa 0%, #818cf8 100%);
+  --accent-primary: #f87171; /* High contrast red */
+  --accent-secondary: #f3f4f6;
+  --accent-gradient: linear-gradient(135deg, #f87171 0%, #171717 100%);
   --success: #34d399;
-  --danger: #f87171;
+  --danger: #ef4444;
   --warning: #fbbf24;
   --border-color: #1e293b;
   --glass-bg: rgba(17, 24, 39, 0.7);
