@@ -1,0 +1,429 @@
+.modern-login-page {
+  min-height: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.modern-login-page::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at top left, rgba(220, 38, 38, 0.2), transparent 34%),
+    radial-gradient(circle at bottom right, rgba(15, 23, 42, 0.16), transparent 36%);
+  pointer-events: none;
+}
+
+.modern-login-shell {
+  width: min(1120px, 100%);
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.modern-login-hero {
+  min-height: 590px;
+  border-radius: 28px;
+  padding: 3rem;
+  color: white;
+  background:
+    linear-gradient(135deg, rgba(220, 38, 38, 0.96), rgba(23, 23, 23, 0.96));
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+}
+
+.modern-login-hero::after {
+  content: '';
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  right: -110px;
+  top: -110px;
+  border-radius: 50%;
+  border: 42px solid rgba(255, 255, 255, 0.08);
+}
+
+.modern-login-badge {
+  width: fit-content;
+  padding: 0.55rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.modern-login-hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.modern-login-hero h1 {
+  max-width: 720px;
+  margin-bottom: 1rem;
+  font-size: clamp(2.3rem, 4.8vw, 4.6rem);
+  line-height: 0.96;
+  letter-spacing: -0.06em;
+}
+
+.modern-login-hero p {
+  max-width: 620px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.modern-login-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.modern-login-features article {
+  padding: 1rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.11);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.modern-login-features span {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.modern-login-features strong {
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.modern-login-features small {
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.5;
+}
+
+.modern-login-card-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modern-login-card {
+  width: min(460px, 100%);
+  padding: 2.4rem;
+  border-radius: 28px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-lg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.modern-login-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.modern-login-logo {
+  width: 58px;
+  height: 58px;
+  flex: 0 0 58px;
+  display: grid;
+  place-items: center;
+  border-radius: 18px;
+  background: var(--accent-gradient);
+  color: white;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  box-shadow: 0 14px 28px rgba(220, 38, 38, 0.24);
+}
+
+.modern-login-card-header h2 {
+  margin: 0 0 0.25rem;
+  font-size: 1.75rem;
+}
+
+.modern-login-card-header p {
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+.modern-login-error {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  margin-bottom: 1.25rem;
+  padding: 0.9rem 1rem;
+  border-radius: 16px;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  color: var(--danger);
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.modern-login-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  margin-bottom: 1rem;
+}
+
+.modern-login-form-group label {
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.modern-login-input-box {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  min-height: 52px;
+  padding: 0 0.95rem;
+  border-radius: 16px;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  transition: var(--transition);
+}
+
+.modern-login-input-box:focus-within {
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 4px rgba(220, 38, 38, 0.12);
+}
+
+.modern-login-input-box input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--text-primary);
+  font: inherit;
+}
+
+.modern-login-input-box input::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.72;
+}
+
+.modern-login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin: 0.4rem 0 1.25rem;
+}
+
+.modern-login-checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  cursor: pointer;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.modern-login-checkbox input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--accent-primary);
+}
+
+.modern-login-secure {
+  color: var(--success);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.modern-login-submit {
+  width: 100%;
+  min-height: 54px;
+  border: 0;
+  border-radius: 16px;
+  cursor: pointer;
+  color: white;
+  font: inherit;
+  font-weight: 800;
+  background: var(--accent-gradient);
+  box-shadow: 0 18px 32px rgba(220, 38, 38, 0.22);
+  transition: var(--transition);
+}
+
+.modern-login-submit:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 24px 42px rgba(220, 38, 38, 0.28);
+}
+
+.modern-login-submit:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.modern-login-demo {
+  margin-top: 1.4rem;
+  padding: 1rem;
+  border-radius: 18px;
+  background: var(--bg-primary);
+  border: 1px dashed var(--border-color);
+}
+
+.modern-login-demo p {
+  margin: 0 0 0.75rem;
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.modern-login-demo div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.45rem 0;
+}
+
+.modern-login-demo span {
+  color: var(--text-secondary);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.modern-login-demo code {
+  padding: 0.25rem 0.45rem;
+  border-radius: 8px;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-size: 0.82rem;
+}
+
+@media (max-width: 960px) {
+  .modern-login-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .modern-login-hero {
+    min-height: auto;
+  }
+
+  .modern-login-features {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .modern-login-page {
+    padding: 1rem;
+  }
+
+  .modern-login-hero,
+  .modern-login-card {
+    border-radius: 22px;
+  }
+
+  .modern-login-hero,
+  .modern-login-card {
+    padding: 1.5rem;
+  }
+
+  .modern-login-options,
+  .modern-login-demo div {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+    .modern-login-field-icon {
+        width: 22px;
+        height: 22px;
+        flex: 0 0 22px;
+        display: grid;
+        place-items: center;
+        color: var(--accent-primary);
+    }
+
+        .modern-login-field-icon svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    .modern-login-demo {
+        margin-top: 1.4rem;
+        padding: 1rem;
+        border-radius: 18px;
+        background: var(--bg-primary);
+        border: 1px dashed var(--border-color);
+    }
+
+    .modern-login-demo-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-bottom: 0.85rem;
+    }
+
+        .modern-login-demo-header p {
+            margin: 0;
+            color: var(--text-primary);
+            font-size: 0.84rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+
+        .modern-login-demo-header span {
+            color: var(--accent-primary);
+            font-size: 0.75rem;
+            font-weight: 800;
+            white-space: nowrap;
+        }
+
+    .modern-login-demo-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.45rem 0;
+    }
+
+        .modern-login-demo-row span {
+            color: var(--text-secondary);
+            font-size: 0.86rem;
+            font-weight: 700;
+        }
+
+        .modern-login-demo-row code {
+            padding: 0.25rem 0.55rem;
+            border-radius: 8px;
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            font-size: 0.82rem;
+        }
+
+    .modern-login-demo small {
+        display: block;
+        margin-top: 0.75rem;
+        color: var(--text-secondary);
+        font-size: 0.78rem;
+        line-height: 1.45;
+    }
+}
