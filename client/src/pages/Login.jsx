@@ -18,7 +18,7 @@ const Login = () => {
     const [error, setError] = useState('');
     const [isSubmitting, setIsSubmitting] = useState(false);
 
-    const { login, user } = useAuth();
+    const { login, user, theme } = useAuth();
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -117,7 +117,15 @@ const Login = () => {
                 <div className="modern-login-card-wrapper">
                     <form className="modern-login-card" onSubmit={handleSubmit}>
                         <div className="modern-login-card-header">
-                            <div className="modern-login-logo">AC</div>
+                            <img 
+                                src={theme === 'dark' 
+                                  ? 'https://res.cloudinary.com/donhemyhq/image/upload/v1780085546/logo4_xvuart.png' 
+                                  : 'https://res.cloudinary.com/donhemyhq/image/upload/v1780085330/logo3_wraojl.png'
+                                } 
+                                alt="UTCN Logo" 
+                                className="modern-login-logo" 
+                                style={{ objectFit: 'contain', padding: '2px', background: 'transparent', boxShadow: 'none' }}
+                            />
 
                             <div>
                                 <h2>Autentificare</h2>
