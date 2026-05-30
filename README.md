@@ -17,19 +17,19 @@ Acesta este scheletul de bază al aplicației pentru portalul studențesc UTCN, 
 
 Proiectul este structurat special pentru a permite celor 4 membri să lucreze în paralel, reducând la minimum conflictele de pe Git:
 
-### 🧑‍💻 Persoana 1: Autentificare și Management Utilizatori (Auth)
+### 🧑‍💻David: Autentificare și Management Utilizatori (Auth)
 * **Frontend:** Pagina de Login ([Login.jsx](file:///Users/gramaadrian/Desktop/Facultate/UTCNwebsite/client/src/pages/Login.jsx)) + Stocare locală "Remember Me" + Integrare [AuthContext.jsx](file:///Users/gramaadrian/Desktop/Facultate/UTCNwebsite/client/src/context/AuthContext.jsx).
 * **Backend:** Rutele și controlerele de auth ([auth.routes.js](file:///Users/gramaadrian/Desktop/Facultate/UTCNwebsite/server/routes/auth.routes.js), [auth.controller.js](file:///Users/gramaadrian/Desktop/Facultate/UTCNwebsite/server/controllers/auth.controller.js)) + Middleware [auth.middleware.js](file:///Users/gramaadrian/Desktop/Facultate/UTCNwebsite/server/middleware/auth.middleware.js).
 
-### 🧑‍💻 Persoana 2: Situație Școlară (Grades CRUD)
+### 🧑‍💻 Vladimir: Situație Școlară (Grades CRUD)
 * **Frontend:** Pagina de Note ([Grades.jsx](file:///Users/gramaadrian/Desktop/Facultate/UTCNwebsite/client/src/pages/Grades.jsx)) care afișează mediile/ECTS pentru studenți și oferă formulare/modale CRUD pentru profesori.
 * **Backend:** Rutele și controlerele de note ([grades.routes.js](file:///Users/gramaadrian/Desktop/Facultate/UTCNwebsite/server/routes/grades.routes.js), [grades.controller.js](file:///Users/gramaadrian/Desktop/Facultate/UTCNwebsite/server/controllers/grades.controller.js)).
 
-### 🧑‍💻 Persoana 3: Management Anunțuri (Announcements CRUD)
+### 🧑‍💻 Vlad: Management Anunțuri (Announcements CRUD)
 * **Frontend:** Pagina de Anunțuri ([Announcements.jsx](file:///Users/gramaadrian/Desktop/Facultate/UTCNwebsite/client/src/pages/Announcements.jsx)) cu categorii (filtru salvat în `localStorage`) și opțiuni de adăugare/ștergere pentru profesori.
 * **Backend:** Rutele și controlerele de anunțuri ([announcements.routes.js](file:///Users/gramaadrian/Desktop/Facultate/UTCNwebsite/server/routes/announcements.routes.js), [announcements.controller.js](file:///Users/gramaadrian/Desktop/Facultate/UTCNwebsite/server/controllers/announcements.controller.js)).
 
-### 🧑‍💻 Persoana 4: Dashboard, Design System, Integrare și Testare
+### 🧑‍💻 Adi: Dashboard, Design System, Integrare și Testare
 * **Frontend:** Pagina principală ([Dashboard.jsx](file:///Users/gramaadrian/Desktop/Facultate/UTCNwebsite/client/src/pages/Dashboard.jsx)) care agregă statisticile, ultimele anunțuri și profilul + Structura generală [App.jsx](file:///Users/gramaadrian/Desktop/Facultate/UTCNwebsite/client/src/App.jsx) + Design System în [index.css](file:///Users/gramaadrian/Desktop/Facultate/UTCNwebsite/client/src/index.css).
 * **Testare:** Crearea colecției Postman și testarea manuală/validarea.
 
