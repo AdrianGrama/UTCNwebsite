@@ -469,3 +469,207 @@ p.subtitle {
   gap: 0.75rem;
   margin-top: 1.5rem;
 }
+
+/* Filters & Search */
+.filters-wrapper {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.filters-row {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+.filter-item {
+  flex: 1 1 200px;
+}
+
+/* Toast Notifications */
+.toast-container {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 1100;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  pointer-events: none;
+}
+
+.toast {
+  background: var(--bg-secondary);
+  border-left: 4px solid var(--success);
+  box-shadow: var(--shadow-lg);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  color: var(--text-primary);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  pointer-events: auto;
+  animation: slideInRight 0.3s cubic-bezier(0.16, 1, 0.3, 1), fadeOut 0.3s ease 2.7s forwards;
+  min-width: 280px;
+  border-top: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.toast-danger {
+  border-left-color: var(--danger);
+}
+
+.toast-warning {
+  border-left-color: var(--warning);
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(120%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; transform: translateY(0); }
+  to { opacity: 0; transform: translateY(-10px); }
+}
+
+/* ECTS Progress Bar */
+.progress-bar-container {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 9999px;
+  height: 12px;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 0.5rem;
+  position: relative;
+}
+
+.progress-bar-fill {
+  background: linear-gradient(90deg, var(--accent-primary) 0%, #ef4444 100%);
+  height: 100%;
+  border-radius: 9999px;
+  transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.progress-bar-fill::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.15) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  animation: progress-shimmer 2s infinite linear;
+}
+
+@keyframes progress-shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+/* Custom CSS Grade Distribution Bar Chart */
+.chart-card {
+  margin-top: 1.5rem;
+}
+
+.chart-bars-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 180px;
+  padding: 1rem 0;
+  border-bottom: 2px solid var(--border-color);
+  gap: 6px;
+}
+
+.chart-bar-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.chart-bar-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+}
+
+.chart-bar-fill {
+  width: 80%;
+  max-width: 32px;
+  background-color: var(--border-color);
+  border-radius: 4px 4px 0 0;
+  transition: height 0.6s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s;
+  position: relative;
+  cursor: pointer;
+}
+
+.chart-bar-fill:hover {
+  background-color: var(--accent-primary) !important;
+}
+
+.chart-bar-fill.active {
+  background-color: var(--accent-primary) !important;
+}
+
+/* Tooltip on Chart Bar */
+.chart-bar-tooltip {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%) scale(0.9);
+  background: var(--text-primary);
+  color: var(--bg-secondary);
+  padding: 2px 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 4px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s, transform 0.2s;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.chart-bar-fill:hover .chart-bar-tooltip {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+
+.chart-x-axis-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-top: 0.5rem;
+}
+
+/* Student Summary Grid */
+.student-summary-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 900px) {
+  .student-summary-grid {
+    grid-template-columns: 1.5fr 1fr;
+  }
+}

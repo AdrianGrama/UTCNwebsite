@@ -7,6 +7,7 @@ import { API_BASE_URL } from '../config';
 const Dashboard = () => {
   const { user, token } = useAuth();
   const [grades, setGrades] = useState([]);
+  const [subjects, setSubjects] = useState([]);
   const [announcements, setAnnouncements] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -19,11 +20,16 @@ const Dashboard = () => {
         const gradesRes = await fetch(`${API_BASE_URL}/api/grades`, { headers });
         const gradesData = await gradesRes.json();
 
+        // Preluăm materiile
+        const subjectsRes = await fetch(`${API_BASE_URL}/api/grades/subjects`, { headers });
+        const subjectsData = await subjectsRes.json();
+
         // Preluăm anunțurile
         const annRes = await fetch(`${API_BASE_URL}/api/announcements`, { headers });
         const annData = await annRes.json();
 
         if (gradesRes.ok) setGrades(gradesData);
+        if (subjectsRes.ok) setSubjects(subjectsData);
         if (annRes.ok) setAnnouncements(annData);
       } catch (error) {
         console.error('Eroare preluare date dashboard:', error);
@@ -45,11 +51,20 @@ const Dashboard = () => {
 
   // Calculare statistici student
   const calculateStudentStats = () => {
-    if (grades.length === 0) return { avg: 0, credits: 0, count: 0 };
+    if (grades.length === 0) return { avg: 0, credits: 0, count: 0, sem2Credits: 0 };
     const totalCredits = grades.reduce((acc, curr) => acc + curr.credits, 0);
     const weightedSum = grades.reduce((acc, curr) => acc + (curr.grade * curr.credits), 0);
     const avg = totalCredits > 0 ? (weightedSum / totalCredits).toFixed(2) : 0;
-    return { avg, credits: totalCredits, count: grades.length };
+
+    // Calculăm creditele promovate în Semestrul 2 al anului curent de studiu
+    const studentYear = user.year || 1;
+    const sem2Grades = grades.filter(g => {
+      const subInfo = subjects.find(s => s.name === g.subject);
+      return subInfo && subInfo.year === studentYear && subInfo.semester === 2;
+    });
+    const sem2Credits = sem2Grades.filter(g => g.grade >= 5).reduce((acc, curr) => acc + curr.credits, 0);
+
+    return { avg, credits: totalCredits, count: grades.length, sem2Credits };
   };
 
   // Calculare statistici profesor
@@ -83,7 +98,7 @@ const Dashboard = () => {
               <div className="stat-label">Media Ponderată</div>
             </div>
             <div className="card stat-card">
-              <div className="stat-value">{studentStats.credits} / 30</div>
+              <div className="stat-value">{studentStats.sem2Credits} / 30</div>
               <div className="stat-label">Credite ECTS Semestriale</div>
             </div>
             <div className="card stat-card">
