@@ -8,7 +8,8 @@
       "name": "Ion Popescu",
       "group": "30331",
       "email": "ion.popescu@student.utcluj.ro",
-      "specialization": "Calculatoare (Română)"
+      "specialization": "Calculatoare (Română)",
+      "year": 1
     },
     {
       "id": "u2",
@@ -18,76 +19,3213 @@
       "name": "Maria Ionescu",
       "group": "30332",
       "email": "maria.ionescu@student.utcluj.ro",
-      "specialization": "Calculatoare (Engleză)"
+      "specialization": "Calculatoare (Engleză)",
+      "year": 1
     },
     {
-      "id": "u3",
-      "username": "dobra.fecior",
+      "id": "s1_1",
+      "username": "student1an1",
+      "password": "student123",
+      "role": "student",
+      "name": "Student1 An1",
+      "group": "30111",
+      "email": "student1an1@student.utcluj.ro",
+      "specialization": "Automatică",
+      "year": 1
+    },
+    {
+      "id": "s2_1",
+      "username": "student2an1",
+      "password": "student123",
+      "role": "student",
+      "name": "Student2 An1 (Pericol Repetare)",
+      "group": "30111",
+      "email": "student2an1@student.utcluj.ro",
+      "specialization": "Automatică",
+      "year": 1
+    },
+    {
+      "id": "s1_2",
+      "username": "student1an2",
+      "password": "student123",
+      "role": "student",
+      "name": "Student1 An2",
+      "group": "30211",
+      "email": "student1an2@student.utcluj.ro",
+      "specialization": "Automatică",
+      "year": 2
+    },
+    {
+      "id": "s2_2",
+      "username": "student2an2",
+      "password": "student123",
+      "role": "student",
+      "name": "Student2 An2 (Pericol Repetare)",
+      "group": "30211",
+      "email": "student2an2@student.utcluj.ro",
+      "specialization": "Automatică",
+      "year": 2
+    },
+    {
+      "id": "s1_3",
+      "username": "student1an3",
+      "password": "student123",
+      "role": "student",
+      "name": "Student1 An3",
+      "group": "30311",
+      "email": "student1an3@student.utcluj.ro",
+      "specialization": "Automatică",
+      "year": 3
+    },
+    {
+      "id": "s2_3",
+      "username": "student2an3",
+      "password": "student123",
+      "role": "student",
+      "name": "Student2 An3 (Pericol Repetare)",
+      "group": "30311",
+      "email": "student2an3@student.utcluj.ro",
+      "specialization": "Automatică",
+      "year": 3
+    },
+    {
+      "id": "s1_4",
+      "username": "student1an4",
+      "password": "student123",
+      "role": "student",
+      "name": "Student1 An4",
+      "group": "30411",
+      "email": "student1an4@student.utcluj.ro",
+      "specialization": "Automatică",
+      "year": 4
+    },
+    {
+      "id": "s2_4",
+      "username": "student2an4",
+      "password": "student123",
+      "role": "student",
+      "name": "Student2 An4 (Pericol Repetare)",
+      "group": "30411",
+      "email": "student2an4@student.utcluj.ro",
+      "specialization": "Automatică",
+      "year": 4
+    },
+    {
+      "id": "test1_4",
+      "username": "test1an4",
+      "password": "student123",
+      "role": "student",
+      "name": "Test1 An4",
+      "group": "30412",
+      "email": "test1an4@student.utcluj.ro",
+      "specialization": "Automatică",
+      "year": 4
+    },
+    {
+      "id": "test2_4",
+      "username": "test2an4",
+      "password": "student123",
+      "role": "student",
+      "name": "Test2 An4",
+      "group": "30412",
+      "email": "test2an4@student.utcluj.ro",
+      "specialization": "Automatică",
+      "year": 4
+    },
+    {
+      "id": "t4",
+      "username": "lisman.evreul",
       "password": "prof123",
       "role": "teacher",
-      "name": "Prof. Dr. Ing. Dobra",
-      "email": "dobra@utcluj.ro",
-      "department": "Calculatoare"
+      "name": "Lisman Evreul",
+      "email": "lisman.evreul@prof.utcluj.ro",
+      "department": "Automatică",
+      "subjects": [
+        "Analiza matematica I",
+        "Programarea calculatoarelor si limbaje de programare",
+        "Analiza matematica II",
+        "Informatica aplicata",
+        "Metode numerice",
+        "Analiza si sinteza dispozitivelor numerice",
+        "Teoria sistemelor I",
+        "Mecanica",
+        "Teoria sistemelor II",
+        "Electronica de putere",
+        "Ingineria reglarii automate II",
+        "Echipamente hidro-pneumatice",
+        "Sisteme de control distribuit",
+        "Retele de calculatoare",
+        "Conducerea proceselor industriale",
+        "Metodologia intocmirii proiectelor"
+      ]
+    },
+    {
+      "id": "t1",
+      "username": "todea.andrei",
+      "password": "prof123",
+      "role": "teacher",
+      "name": "Todea Andrei",
+      "email": "todea.andrei@prof.utcluj.ro",
+      "department": "Matematică",
+      "subjects": [
+        "Algebra liniara, geometrie analitica si diferentiala",
+        "Fizica",
+        "Matematici speciale",
+        "Chimie",
+        "Masurari si traductoare",
+        "Modelarea proceselor",
+        "Semnale si sisteme",
+        "Sisteme cu microprocesoare",
+        "Ingineria reglarii automate I",
+        "Legislatie economica",
+        "Sisteme de timp real",
+        "Transmisia datelor",
+        "Sisteme de conducere a robotilor",
+        "Managementul proiectelor",
+        "Conducerea numerica a masinilor unelte",
+        "Elaborarea proiectului de diploma"
+      ]
+    },
+    {
+      "id": "t2",
+      "username": "harja.ioan",
+      "password": "prof123",
+      "role": "teacher",
+      "name": "Harja Ioan",
+      "email": "harja.ioan@prof.utcluj.ro",
+      "department": "Electronică",
+      "subjects": [
+        "Arhitectura calculatoarelor",
+        "Limba engleza 1",
+        "Electrotehnica",
+        "Limba engleza 2",
+        "Electronica digitala",
+        "Limba engleza I - Redactarea documentelor tehnice",
+        "Ingineria sistemelor de programe",
+        "Limba engleza II - Redactarea documentelor tehnice",
+        "Sisteme dinamice cu evenimente discrete",
+        "Management si comunicare",
+        "Informatica industriala",
+        "Practica de domeniu (TOTAL)",
+        "Sisteme de conducere a proceselor continue",
+        "Marketing",
+        "Optimizari",
+        "Practica pentru proiectul de diploma"
+      ]
+    },
+    {
+      "id": "t3",
+      "username": "gavrea.ioan",
+      "password": "prof123",
+      "role": "teacher",
+      "name": "Gavrea Ioan",
+      "email": "gavrea.ioan@prof.utcluj.ro",
+      "department": "Matematică",
+      "subjects": [
+        "Circuite electronice liniare",
+        "Grafica asistata de calculator",
+        "Educatie fizica si sport I",
+        "Proiectarea algoritmilor",
+        "Educatie fizica si sport II",
+        "Baze de date",
+        "Identificarea sistemelor",
+        "Echipamente de automatizare electrice si electronice",
+        "Practica de specialitate (TOTAL)",
+        "Fiabilitate si diagnoza",
+        "Estimatoare in controlul sistemelor dinamice"
+      ]
+    }
+  ],
+  "subjects": [
+    {
+      "name": "Analiza matematica I",
+      "year": 1,
+      "semester": 1,
+      "credits": 5
+    },
+    {
+      "name": "Algebra liniara, geometrie analitica si diferentiala",
+      "year": 1,
+      "semester": 1,
+      "credits": 4
+    },
+    {
+      "name": "Arhitectura calculatoarelor",
+      "year": 1,
+      "semester": 1,
+      "credits": 5
+    },
+    {
+      "name": "Circuite electronice liniare",
+      "year": 1,
+      "semester": 1,
+      "credits": 5
+    },
+    {
+      "name": "Programarea calculatoarelor si limbaje de programare",
+      "year": 1,
+      "semester": 1,
+      "credits": 5
+    },
+    {
+      "name": "Fizica",
+      "year": 1,
+      "semester": 1,
+      "credits": 4
+    },
+    {
+      "name": "Limba engleza 1",
+      "year": 1,
+      "semester": 1,
+      "credits": 2
+    },
+    {
+      "name": "Analiza matematica II",
+      "year": 1,
+      "semester": 2,
+      "credits": 5
+    },
+    {
+      "name": "Matematici speciale",
+      "year": 1,
+      "semester": 2,
+      "credits": 5
+    },
+    {
+      "name": "Electrotehnica",
+      "year": 1,
+      "semester": 2,
+      "credits": 5
+    },
+    {
+      "name": "Grafica asistata de calculator",
+      "year": 1,
+      "semester": 2,
+      "credits": 5
+    },
+    {
+      "name": "Informatica aplicata",
+      "year": 1,
+      "semester": 2,
+      "credits": 3
+    },
+    {
+      "name": "Chimie",
+      "year": 1,
+      "semester": 2,
+      "credits": 3
+    },
+    {
+      "name": "Limba engleza 2",
+      "year": 1,
+      "semester": 2,
+      "credits": 2
+    },
+    {
+      "name": "Educatie fizica si sport I",
+      "year": 1,
+      "semester": 2,
+      "credits": 2
+    },
+    {
+      "name": "Metode numerice",
+      "year": 2,
+      "semester": 1,
+      "credits": 4
+    },
+    {
+      "name": "Masurari si traductoare",
+      "year": 2,
+      "semester": 1,
+      "credits": 4
+    },
+    {
+      "name": "Electronica digitala",
+      "year": 2,
+      "semester": 1,
+      "credits": 5
+    },
+    {
+      "name": "Proiectarea algoritmilor",
+      "year": 2,
+      "semester": 1,
+      "credits": 5
+    },
+    {
+      "name": "Analiza si sinteza dispozitivelor numerice",
+      "year": 2,
+      "semester": 1,
+      "credits": 4
+    },
+    {
+      "name": "Modelarea proceselor",
+      "year": 2,
+      "semester": 1,
+      "credits": 4
+    },
+    {
+      "name": "Limba engleza I - Redactarea documentelor tehnice",
+      "year": 2,
+      "semester": 1,
+      "credits": 2
+    },
+    {
+      "name": "Educatie fizica si sport II",
+      "year": 2,
+      "semester": 1,
+      "credits": 2
+    },
+    {
+      "name": "Teoria sistemelor I",
+      "year": 2,
+      "semester": 2,
+      "credits": 5
+    },
+    {
+      "name": "Semnale si sisteme",
+      "year": 2,
+      "semester": 2,
+      "credits": 4
+    },
+    {
+      "name": "Ingineria sistemelor de programe",
+      "year": 2,
+      "semester": 2,
+      "credits": 5
+    },
+    {
+      "name": "Baze de date",
+      "year": 2,
+      "semester": 2,
+      "credits": 5
+    },
+    {
+      "name": "Mecanica",
+      "year": 2,
+      "semester": 2,
+      "credits": 4
+    },
+    {
+      "name": "Sisteme cu microprocesoare",
+      "year": 2,
+      "semester": 2,
+      "credits": 5
+    },
+    {
+      "name": "Limba engleza II - Redactarea documentelor tehnice",
+      "year": 2,
+      "semester": 2,
+      "credits": 2
+    },
+    {
+      "name": "Teoria sistemelor II",
+      "year": 3,
+      "semester": 1,
+      "credits": 6
+    },
+    {
+      "name": "Ingineria reglarii automate I",
+      "year": 3,
+      "semester": 1,
+      "credits": 5
+    },
+    {
+      "name": "Sisteme dinamice cu evenimente discrete",
+      "year": 3,
+      "semester": 1,
+      "credits": 5
+    },
+    {
+      "name": "Identificarea sistemelor",
+      "year": 3,
+      "semester": 1,
+      "credits": 5
+    },
+    {
+      "name": "Electronica de putere",
+      "year": 3,
+      "semester": 1,
+      "credits": 5
+    },
+    {
+      "name": "Legislatie economica",
+      "year": 3,
+      "semester": 1,
+      "credits": 2
+    },
+    {
+      "name": "Management si comunicare",
+      "year": 3,
+      "semester": 1,
+      "credits": 2
+    },
+    {
+      "name": "Ingineria reglarii automate II",
+      "year": 3,
+      "semester": 2,
+      "credits": 4
+    },
+    {
+      "name": "Sisteme de timp real",
+      "year": 3,
+      "semester": 2,
+      "credits": 4
+    },
+    {
+      "name": "Informatica industriala",
+      "year": 3,
+      "semester": 2,
+      "credits": 3
+    },
+    {
+      "name": "Echipamente de automatizare electrice si electronice",
+      "year": 3,
+      "semester": 2,
+      "credits": 3
+    },
+    {
+      "name": "Echipamente hidro-pneumatice",
+      "year": 3,
+      "semester": 2,
+      "credits": 3
+    },
+    {
+      "name": "Transmisia datelor",
+      "year": 3,
+      "semester": 2,
+      "credits": 3
+    },
+    {
+      "name": "Practica de domeniu (TOTAL)",
+      "year": 3,
+      "semester": 2,
+      "credits": 4
+    },
+    {
+      "name": "Practica de specialitate (TOTAL)",
+      "year": 3,
+      "semester": 2,
+      "credits": 6
+    },
+    {
+      "name": "Sisteme de control distribuit",
+      "year": 4,
+      "semester": 1,
+      "credits": 5
+    },
+    {
+      "name": "Sisteme de conducere a robotilor",
+      "year": 4,
+      "semester": 1,
+      "credits": 5
+    },
+    {
+      "name": "Sisteme de conducere a proceselor continue",
+      "year": 4,
+      "semester": 1,
+      "credits": 5
+    },
+    {
+      "name": "Fiabilitate si diagnoza",
+      "year": 4,
+      "semester": 1,
+      "credits": 5
+    },
+    {
+      "name": "Retele de calculatoare",
+      "year": 4,
+      "semester": 1,
+      "credits": 4
+    },
+    {
+      "name": "Managementul proiectelor",
+      "year": 4,
+      "semester": 1,
+      "credits": 4
+    },
+    {
+      "name": "Marketing",
+      "year": 4,
+      "semester": 1,
+      "credits": 2
+    },
+    {
+      "name": "Conducerea proceselor industriale",
+      "year": 4,
+      "semester": 2,
+      "credits": 5
+    },
+    {
+      "name": "Conducerea numerica a masinilor unelte",
+      "year": 4,
+      "semester": 2,
+      "credits": 5
+    },
+    {
+      "name": "Optimizari",
+      "year": 4,
+      "semester": 2,
+      "credits": 5
+    },
+    {
+      "name": "Estimatoare in controlul sistemelor dinamice",
+      "year": 4,
+      "semester": 2,
+      "credits": 5
+    },
+    {
+      "name": "Metodologia intocmirii proiectelor",
+      "year": 4,
+      "semester": 2,
+      "credits": 2
+    },
+    {
+      "name": "Elaborarea proiectului de diploma",
+      "year": 4,
+      "semester": 2,
+      "credits": 4
+    },
+    {
+      "name": "Practica pentru proiectul de diploma",
+      "year": 4,
+      "semester": 2,
+      "credits": 4
     }
   ],
   "grades": [
     {
-      "id": "g1",
+      "id": "g_1",
       "studentId": "u1",
-      "subject": "Tehnologii Distribuite",
+      "subject": "Analiza matematica I",
+      "grade": 7,
+      "credits": 5,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_2",
+      "studentId": "u1",
+      "subject": "Algebra liniara, geometrie analitica si diferentiala",
+      "grade": 8,
+      "credits": 4,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_3",
+      "studentId": "u1",
+      "subject": "Arhitectura calculatoarelor",
       "grade": 9,
       "credits": 5,
-      "date": "2026-05-15"
+      "date": "2026-01-20"
     },
     {
-      "id": "g2",
+      "id": "g_4",
       "studentId": "u1",
-      "subject": "Programare Web",
+      "subject": "Circuite electronice liniare",
       "grade": 10,
-      "credits": 4,
-      "date": "2026-05-20"
+      "credits": 5,
+      "date": "2026-01-20"
     },
     {
-      "id": "g3",
+      "id": "g_5",
+      "studentId": "u1",
+      "subject": "Programarea calculatoarelor si limbaje de programare",
+      "grade": 6,
+      "credits": 5,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_6",
+      "studentId": "u1",
+      "subject": "Fizica",
+      "grade": 7,
+      "credits": 4,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_7",
+      "studentId": "u1",
+      "subject": "Limba engleza 1",
+      "grade": 8,
+      "credits": 2,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_8",
+      "studentId": "u1",
+      "subject": "Analiza matematica II",
+      "grade": 9,
+      "credits": 5,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_9",
+      "studentId": "u1",
+      "subject": "Matematici speciale",
+      "grade": 10,
+      "credits": 5,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_10",
+      "studentId": "u1",
+      "subject": "Electrotehnica",
+      "grade": 6,
+      "credits": 5,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_11",
+      "studentId": "u1",
+      "subject": "Grafica asistata de calculator",
+      "grade": 7,
+      "credits": 5,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_12",
+      "studentId": "u1",
+      "subject": "Informatica aplicata",
+      "grade": 8,
+      "credits": 3,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_13",
+      "studentId": "u1",
+      "subject": "Chimie",
+      "grade": 9,
+      "credits": 3,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_14",
+      "studentId": "u1",
+      "subject": "Limba engleza 2",
+      "grade": 10,
+      "credits": 2,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_15",
+      "studentId": "u1",
+      "subject": "Educatie fizica si sport I",
+      "grade": 6,
+      "credits": 2,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_16",
       "studentId": "u2",
-      "subject": "Tehnologii Distribuite",
+      "subject": "Analiza matematica I",
+      "grade": 7,
+      "credits": 5,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_17",
+      "studentId": "u2",
+      "subject": "Algebra liniara, geometrie analitica si diferentiala",
+      "grade": 8,
+      "credits": 4,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_18",
+      "studentId": "u2",
+      "subject": "Arhitectura calculatoarelor",
+      "grade": 9,
+      "credits": 5,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_19",
+      "studentId": "u2",
+      "subject": "Circuite electronice liniare",
+      "grade": 10,
+      "credits": 5,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_20",
+      "studentId": "u2",
+      "subject": "Programarea calculatoarelor si limbaje de programare",
+      "grade": 6,
+      "credits": 5,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_21",
+      "studentId": "u2",
+      "subject": "Fizica",
+      "grade": 7,
+      "credits": 4,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_22",
+      "studentId": "u2",
+      "subject": "Limba engleza 1",
+      "grade": 8,
+      "credits": 2,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_23",
+      "studentId": "u2",
+      "subject": "Analiza matematica II",
+      "grade": 9,
+      "credits": 5,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_24",
+      "studentId": "u2",
+      "subject": "Matematici speciale",
+      "grade": 10,
+      "credits": 5,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_25",
+      "studentId": "u2",
+      "subject": "Electrotehnica",
+      "grade": 6,
+      "credits": 5,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_26",
+      "studentId": "u2",
+      "subject": "Grafica asistata de calculator",
+      "grade": 7,
+      "credits": 5,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_27",
+      "studentId": "u2",
+      "subject": "Informatica aplicata",
+      "grade": 8,
+      "credits": 3,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_28",
+      "studentId": "u2",
+      "subject": "Chimie",
+      "grade": 9,
+      "credits": 3,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_29",
+      "studentId": "u2",
+      "subject": "Limba engleza 2",
+      "grade": 10,
+      "credits": 2,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_30",
+      "studentId": "u2",
+      "subject": "Educatie fizica si sport I",
+      "grade": 6,
+      "credits": 2,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_31",
+      "studentId": "s1_1",
+      "subject": "Analiza matematica I",
+      "grade": 7,
+      "credits": 5,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_32",
+      "studentId": "s1_1",
+      "subject": "Algebra liniara, geometrie analitica si diferentiala",
+      "grade": 8,
+      "credits": 4,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_33",
+      "studentId": "s1_1",
+      "subject": "Arhitectura calculatoarelor",
+      "grade": 9,
+      "credits": 5,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_34",
+      "studentId": "s1_1",
+      "subject": "Circuite electronice liniare",
+      "grade": 10,
+      "credits": 5,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_35",
+      "studentId": "s1_1",
+      "subject": "Programarea calculatoarelor si limbaje de programare",
+      "grade": 6,
+      "credits": 5,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_36",
+      "studentId": "s1_1",
+      "subject": "Fizica",
+      "grade": 7,
+      "credits": 4,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_37",
+      "studentId": "s1_1",
+      "subject": "Limba engleza 1",
+      "grade": 8,
+      "credits": 2,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_38",
+      "studentId": "s1_1",
+      "subject": "Analiza matematica II",
+      "grade": 9,
+      "credits": 5,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_39",
+      "studentId": "s1_1",
+      "subject": "Matematici speciale",
+      "grade": 10,
+      "credits": 5,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_40",
+      "studentId": "s1_1",
+      "subject": "Electrotehnica",
+      "grade": 6,
+      "credits": 5,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_41",
+      "studentId": "s1_1",
+      "subject": "Grafica asistata de calculator",
+      "grade": 7,
+      "credits": 5,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_42",
+      "studentId": "s1_1",
+      "subject": "Informatica aplicata",
+      "grade": 8,
+      "credits": 3,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_43",
+      "studentId": "s1_1",
+      "subject": "Chimie",
+      "grade": 9,
+      "credits": 3,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_44",
+      "studentId": "s1_1",
+      "subject": "Limba engleza 2",
+      "grade": 10,
+      "credits": 2,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_45",
+      "studentId": "s1_1",
+      "subject": "Educatie fizica si sport I",
+      "grade": 6,
+      "credits": 2,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_46",
+      "studentId": "s2_1",
+      "subject": "Analiza matematica I",
+      "grade": 5,
+      "credits": 5,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_47",
+      "studentId": "s2_1",
+      "subject": "Algebra liniara, geometrie analitica si diferentiala",
+      "grade": 6,
+      "credits": 4,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_48",
+      "studentId": "s2_1",
+      "subject": "Arhitectura calculatoarelor",
+      "grade": 7,
+      "credits": 5,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_49",
+      "studentId": "s2_1",
+      "subject": "Circuite electronice liniare",
       "grade": 8,
       "credits": 5,
-      "date": "2026-05-15"
+      "date": "2026-01-20"
     },
     {
-      "id": "g4",
-      "studentId": "u2",
-      "subject": "Baze de Date",
+      "id": "g_50",
+      "studentId": "s2_1",
+      "subject": "Programarea calculatoarelor si limbaje de programare",
+      "grade": 5,
+      "credits": 5,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_51",
+      "studentId": "s2_1",
+      "subject": "Fizica",
+      "grade": 4,
+      "credits": 4,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_52",
+      "studentId": "s2_1",
+      "subject": "Limba engleza 1",
+      "grade": 4,
+      "credits": 2,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_53",
+      "studentId": "s2_1",
+      "subject": "Analiza matematica II",
+      "grade": 4,
+      "credits": 5,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_54",
+      "studentId": "s2_1",
+      "subject": "Matematici speciale",
+      "grade": 4,
+      "credits": 5,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_55",
+      "studentId": "s2_1",
+      "subject": "Electrotehnica",
+      "grade": 4,
+      "credits": 5,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_56",
+      "studentId": "s2_1",
+      "subject": "Grafica asistata de calculator",
+      "grade": 4,
+      "credits": 5,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_57",
+      "studentId": "s2_1",
+      "subject": "Informatica aplicata",
+      "grade": 4,
+      "credits": 3,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_58",
+      "studentId": "s2_1",
+      "subject": "Chimie",
+      "grade": 4,
+      "credits": 3,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_59",
+      "studentId": "s2_1",
+      "subject": "Limba engleza 2",
+      "grade": 4,
+      "credits": 2,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_60",
+      "studentId": "s2_1",
+      "subject": "Educatie fizica si sport I",
+      "grade": 4,
+      "credits": 2,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_61",
+      "studentId": "s1_2",
+      "subject": "Analiza matematica I",
+      "grade": 8,
+      "credits": 5,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_62",
+      "studentId": "s1_2",
+      "subject": "Algebra liniara, geometrie analitica si diferentiala",
+      "grade": 9,
+      "credits": 4,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_63",
+      "studentId": "s1_2",
+      "subject": "Arhitectura calculatoarelor",
       "grade": 10,
       "credits": 5,
-      "date": "2026-05-22"
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_64",
+      "studentId": "s1_2",
+      "subject": "Circuite electronice liniare",
+      "grade": 7,
+      "credits": 5,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_65",
+      "studentId": "s1_2",
+      "subject": "Programarea calculatoarelor si limbaje de programare",
+      "grade": 8,
+      "credits": 5,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_66",
+      "studentId": "s1_2",
+      "subject": "Fizica",
+      "grade": 9,
+      "credits": 4,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_67",
+      "studentId": "s1_2",
+      "subject": "Limba engleza 1",
+      "grade": 10,
+      "credits": 2,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_68",
+      "studentId": "s1_2",
+      "subject": "Analiza matematica II",
+      "grade": 7,
+      "credits": 5,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_69",
+      "studentId": "s1_2",
+      "subject": "Matematici speciale",
+      "grade": 8,
+      "credits": 5,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_70",
+      "studentId": "s1_2",
+      "subject": "Electrotehnica",
+      "grade": 9,
+      "credits": 5,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_71",
+      "studentId": "s1_2",
+      "subject": "Grafica asistata de calculator",
+      "grade": 10,
+      "credits": 5,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_72",
+      "studentId": "s1_2",
+      "subject": "Informatica aplicata",
+      "grade": 7,
+      "credits": 3,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_73",
+      "studentId": "s1_2",
+      "subject": "Chimie",
+      "grade": 8,
+      "credits": 3,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_74",
+      "studentId": "s1_2",
+      "subject": "Limba engleza 2",
+      "grade": 9,
+      "credits": 2,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_75",
+      "studentId": "s1_2",
+      "subject": "Educatie fizica si sport I",
+      "grade": 10,
+      "credits": 2,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_76",
+      "studentId": "s1_2",
+      "subject": "Metode numerice",
+      "grade": 7,
+      "credits": 4,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_77",
+      "studentId": "s1_2",
+      "subject": "Masurari si traductoare",
+      "grade": 8,
+      "credits": 4,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_78",
+      "studentId": "s1_2",
+      "subject": "Electronica digitala",
+      "grade": 9,
+      "credits": 5,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_79",
+      "studentId": "s1_2",
+      "subject": "Proiectarea algoritmilor",
+      "grade": 10,
+      "credits": 5,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_80",
+      "studentId": "s1_2",
+      "subject": "Analiza si sinteza dispozitivelor numerice",
+      "grade": 6,
+      "credits": 4,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_81",
+      "studentId": "s1_2",
+      "subject": "Modelarea proceselor",
+      "grade": 7,
+      "credits": 4,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_82",
+      "studentId": "s1_2",
+      "subject": "Limba engleza I - Redactarea documentelor tehnice",
+      "grade": 8,
+      "credits": 2,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_83",
+      "studentId": "s1_2",
+      "subject": "Educatie fizica si sport II",
+      "grade": 9,
+      "credits": 2,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_84",
+      "studentId": "s1_2",
+      "subject": "Teoria sistemelor I",
+      "grade": 10,
+      "credits": 5,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_85",
+      "studentId": "s1_2",
+      "subject": "Semnale si sisteme",
+      "grade": 6,
+      "credits": 4,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_86",
+      "studentId": "s1_2",
+      "subject": "Ingineria sistemelor de programe",
+      "grade": 7,
+      "credits": 5,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_87",
+      "studentId": "s1_2",
+      "subject": "Baze de date",
+      "grade": 8,
+      "credits": 5,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_88",
+      "studentId": "s1_2",
+      "subject": "Mecanica",
+      "grade": 9,
+      "credits": 4,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_89",
+      "studentId": "s1_2",
+      "subject": "Sisteme cu microprocesoare",
+      "grade": 10,
+      "credits": 5,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_90",
+      "studentId": "s1_2",
+      "subject": "Limba engleza II - Redactarea documentelor tehnice",
+      "grade": 6,
+      "credits": 2,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_91",
+      "studentId": "s2_2",
+      "subject": "Analiza matematica I",
+      "grade": 10,
+      "credits": 5,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_92",
+      "studentId": "s2_2",
+      "subject": "Algebra liniara, geometrie analitica si diferentiala",
+      "grade": 7,
+      "credits": 4,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_93",
+      "studentId": "s2_2",
+      "subject": "Arhitectura calculatoarelor",
+      "grade": 8,
+      "credits": 5,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_94",
+      "studentId": "s2_2",
+      "subject": "Circuite electronice liniare",
+      "grade": 9,
+      "credits": 5,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_95",
+      "studentId": "s2_2",
+      "subject": "Programarea calculatoarelor si limbaje de programare",
+      "grade": 10,
+      "credits": 5,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_96",
+      "studentId": "s2_2",
+      "subject": "Fizica",
+      "grade": 7,
+      "credits": 4,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_97",
+      "studentId": "s2_2",
+      "subject": "Limba engleza 1",
+      "grade": 8,
+      "credits": 2,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_98",
+      "studentId": "s2_2",
+      "subject": "Analiza matematica II",
+      "grade": 9,
+      "credits": 5,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_99",
+      "studentId": "s2_2",
+      "subject": "Matematici speciale",
+      "grade": 10,
+      "credits": 5,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_100",
+      "studentId": "s2_2",
+      "subject": "Electrotehnica",
+      "grade": 7,
+      "credits": 5,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_101",
+      "studentId": "s2_2",
+      "subject": "Grafica asistata de calculator",
+      "grade": 8,
+      "credits": 5,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_102",
+      "studentId": "s2_2",
+      "subject": "Informatica aplicata",
+      "grade": 9,
+      "credits": 3,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_103",
+      "studentId": "s2_2",
+      "subject": "Chimie",
+      "grade": 10,
+      "credits": 3,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_104",
+      "studentId": "s2_2",
+      "subject": "Limba engleza 2",
+      "grade": 7,
+      "credits": 2,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_105",
+      "studentId": "s2_2",
+      "subject": "Educatie fizica si sport I",
+      "grade": 8,
+      "credits": 2,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_106",
+      "studentId": "s2_2",
+      "subject": "Metode numerice",
+      "grade": 5,
+      "credits": 4,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_107",
+      "studentId": "s2_2",
+      "subject": "Masurari si traductoare",
+      "grade": 6,
+      "credits": 4,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_108",
+      "studentId": "s2_2",
+      "subject": "Electronica digitala",
+      "grade": 7,
+      "credits": 5,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_109",
+      "studentId": "s2_2",
+      "subject": "Proiectarea algoritmilor",
+      "grade": 8,
+      "credits": 5,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_110",
+      "studentId": "s2_2",
+      "subject": "Analiza si sinteza dispozitivelor numerice",
+      "grade": 5,
+      "credits": 4,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_111",
+      "studentId": "s2_2",
+      "subject": "Modelarea proceselor",
+      "grade": 4,
+      "credits": 4,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_112",
+      "studentId": "s2_2",
+      "subject": "Limba engleza I - Redactarea documentelor tehnice",
+      "grade": 4,
+      "credits": 2,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_113",
+      "studentId": "s2_2",
+      "subject": "Educatie fizica si sport II",
+      "grade": 4,
+      "credits": 2,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_114",
+      "studentId": "s2_2",
+      "subject": "Teoria sistemelor I",
+      "grade": 4,
+      "credits": 5,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_115",
+      "studentId": "s2_2",
+      "subject": "Semnale si sisteme",
+      "grade": 4,
+      "credits": 4,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_116",
+      "studentId": "s2_2",
+      "subject": "Ingineria sistemelor de programe",
+      "grade": 4,
+      "credits": 5,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_117",
+      "studentId": "s2_2",
+      "subject": "Baze de date",
+      "grade": 4,
+      "credits": 5,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_118",
+      "studentId": "s2_2",
+      "subject": "Mecanica",
+      "grade": 4,
+      "credits": 4,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_119",
+      "studentId": "s2_2",
+      "subject": "Sisteme cu microprocesoare",
+      "grade": 4,
+      "credits": 5,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_120",
+      "studentId": "s2_2",
+      "subject": "Limba engleza II - Redactarea documentelor tehnice",
+      "grade": 4,
+      "credits": 2,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_121",
+      "studentId": "s1_3",
+      "subject": "Analiza matematica I",
+      "grade": 8,
+      "credits": 5,
+      "date": "2024-01-20"
+    },
+    {
+      "id": "g_122",
+      "studentId": "s1_3",
+      "subject": "Algebra liniara, geometrie analitica si diferentiala",
+      "grade": 9,
+      "credits": 4,
+      "date": "2024-01-20"
+    },
+    {
+      "id": "g_123",
+      "studentId": "s1_3",
+      "subject": "Arhitectura calculatoarelor",
+      "grade": 10,
+      "credits": 5,
+      "date": "2024-01-20"
+    },
+    {
+      "id": "g_124",
+      "studentId": "s1_3",
+      "subject": "Circuite electronice liniare",
+      "grade": 7,
+      "credits": 5,
+      "date": "2024-01-20"
+    },
+    {
+      "id": "g_125",
+      "studentId": "s1_3",
+      "subject": "Programarea calculatoarelor si limbaje de programare",
+      "grade": 8,
+      "credits": 5,
+      "date": "2024-01-20"
+    },
+    {
+      "id": "g_126",
+      "studentId": "s1_3",
+      "subject": "Fizica",
+      "grade": 9,
+      "credits": 4,
+      "date": "2024-01-20"
+    },
+    {
+      "id": "g_127",
+      "studentId": "s1_3",
+      "subject": "Limba engleza 1",
+      "grade": 10,
+      "credits": 2,
+      "date": "2024-01-20"
+    },
+    {
+      "id": "g_128",
+      "studentId": "s1_3",
+      "subject": "Analiza matematica II",
+      "grade": 7,
+      "credits": 5,
+      "date": "2024-06-15"
+    },
+    {
+      "id": "g_129",
+      "studentId": "s1_3",
+      "subject": "Matematici speciale",
+      "grade": 8,
+      "credits": 5,
+      "date": "2024-06-15"
+    },
+    {
+      "id": "g_130",
+      "studentId": "s1_3",
+      "subject": "Electrotehnica",
+      "grade": 9,
+      "credits": 5,
+      "date": "2024-06-15"
+    },
+    {
+      "id": "g_131",
+      "studentId": "s1_3",
+      "subject": "Grafica asistata de calculator",
+      "grade": 10,
+      "credits": 5,
+      "date": "2024-06-15"
+    },
+    {
+      "id": "g_132",
+      "studentId": "s1_3",
+      "subject": "Informatica aplicata",
+      "grade": 7,
+      "credits": 3,
+      "date": "2024-06-15"
+    },
+    {
+      "id": "g_133",
+      "studentId": "s1_3",
+      "subject": "Chimie",
+      "grade": 8,
+      "credits": 3,
+      "date": "2024-06-15"
+    },
+    {
+      "id": "g_134",
+      "studentId": "s1_3",
+      "subject": "Limba engleza 2",
+      "grade": 9,
+      "credits": 2,
+      "date": "2024-06-15"
+    },
+    {
+      "id": "g_135",
+      "studentId": "s1_3",
+      "subject": "Educatie fizica si sport I",
+      "grade": 10,
+      "credits": 2,
+      "date": "2024-06-15"
+    },
+    {
+      "id": "g_136",
+      "studentId": "s1_3",
+      "subject": "Metode numerice",
+      "grade": 7,
+      "credits": 4,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_137",
+      "studentId": "s1_3",
+      "subject": "Masurari si traductoare",
+      "grade": 8,
+      "credits": 4,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_138",
+      "studentId": "s1_3",
+      "subject": "Electronica digitala",
+      "grade": 9,
+      "credits": 5,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_139",
+      "studentId": "s1_3",
+      "subject": "Proiectarea algoritmilor",
+      "grade": 10,
+      "credits": 5,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_140",
+      "studentId": "s1_3",
+      "subject": "Analiza si sinteza dispozitivelor numerice",
+      "grade": 7,
+      "credits": 4,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_141",
+      "studentId": "s1_3",
+      "subject": "Modelarea proceselor",
+      "grade": 8,
+      "credits": 4,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_142",
+      "studentId": "s1_3",
+      "subject": "Limba engleza I - Redactarea documentelor tehnice",
+      "grade": 9,
+      "credits": 2,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_143",
+      "studentId": "s1_3",
+      "subject": "Educatie fizica si sport II",
+      "grade": 10,
+      "credits": 2,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_144",
+      "studentId": "s1_3",
+      "subject": "Teoria sistemelor I",
+      "grade": 7,
+      "credits": 5,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_145",
+      "studentId": "s1_3",
+      "subject": "Semnale si sisteme",
+      "grade": 8,
+      "credits": 4,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_146",
+      "studentId": "s1_3",
+      "subject": "Ingineria sistemelor de programe",
+      "grade": 9,
+      "credits": 5,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_147",
+      "studentId": "s1_3",
+      "subject": "Baze de date",
+      "grade": 10,
+      "credits": 5,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_148",
+      "studentId": "s1_3",
+      "subject": "Mecanica",
+      "grade": 7,
+      "credits": 4,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_149",
+      "studentId": "s1_3",
+      "subject": "Sisteme cu microprocesoare",
+      "grade": 8,
+      "credits": 5,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_150",
+      "studentId": "s1_3",
+      "subject": "Limba engleza II - Redactarea documentelor tehnice",
+      "grade": 9,
+      "credits": 2,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_151",
+      "studentId": "s1_3",
+      "subject": "Teoria sistemelor II",
+      "grade": 7,
+      "credits": 6,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_152",
+      "studentId": "s1_3",
+      "subject": "Ingineria reglarii automate I",
+      "grade": 8,
+      "credits": 5,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_153",
+      "studentId": "s1_3",
+      "subject": "Sisteme dinamice cu evenimente discrete",
+      "grade": 9,
+      "credits": 5,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_154",
+      "studentId": "s1_3",
+      "subject": "Identificarea sistemelor",
+      "grade": 10,
+      "credits": 5,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_155",
+      "studentId": "s1_3",
+      "subject": "Electronica de putere",
+      "grade": 6,
+      "credits": 5,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_156",
+      "studentId": "s1_3",
+      "subject": "Legislatie economica",
+      "grade": 7,
+      "credits": 2,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_157",
+      "studentId": "s1_3",
+      "subject": "Management si comunicare",
+      "grade": 8,
+      "credits": 2,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_158",
+      "studentId": "s1_3",
+      "subject": "Ingineria reglarii automate II",
+      "grade": 9,
+      "credits": 4,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_159",
+      "studentId": "s1_3",
+      "subject": "Sisteme de timp real",
+      "grade": 10,
+      "credits": 4,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_160",
+      "studentId": "s1_3",
+      "subject": "Informatica industriala",
+      "grade": 6,
+      "credits": 3,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_161",
+      "studentId": "s1_3",
+      "subject": "Echipamente de automatizare electrice si electronice",
+      "grade": 7,
+      "credits": 3,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_162",
+      "studentId": "s1_3",
+      "subject": "Echipamente hidro-pneumatice",
+      "grade": 8,
+      "credits": 3,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_163",
+      "studentId": "s1_3",
+      "subject": "Transmisia datelor",
+      "grade": 9,
+      "credits": 3,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_164",
+      "studentId": "s1_3",
+      "subject": "Practica de domeniu (TOTAL)",
+      "grade": 10,
+      "credits": 4,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_165",
+      "studentId": "s1_3",
+      "subject": "Practica de specialitate (TOTAL)",
+      "grade": 6,
+      "credits": 6,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_166",
+      "studentId": "s2_3",
+      "subject": "Analiza matematica I",
+      "grade": 9,
+      "credits": 5,
+      "date": "2024-01-20"
+    },
+    {
+      "id": "g_167",
+      "studentId": "s2_3",
+      "subject": "Algebra liniara, geometrie analitica si diferentiala",
+      "grade": 10,
+      "credits": 4,
+      "date": "2024-01-20"
+    },
+    {
+      "id": "g_168",
+      "studentId": "s2_3",
+      "subject": "Arhitectura calculatoarelor",
+      "grade": 7,
+      "credits": 5,
+      "date": "2024-01-20"
+    },
+    {
+      "id": "g_169",
+      "studentId": "s2_3",
+      "subject": "Circuite electronice liniare",
+      "grade": 8,
+      "credits": 5,
+      "date": "2024-01-20"
+    },
+    {
+      "id": "g_170",
+      "studentId": "s2_3",
+      "subject": "Programarea calculatoarelor si limbaje de programare",
+      "grade": 9,
+      "credits": 5,
+      "date": "2024-01-20"
+    },
+    {
+      "id": "g_171",
+      "studentId": "s2_3",
+      "subject": "Fizica",
+      "grade": 10,
+      "credits": 4,
+      "date": "2024-01-20"
+    },
+    {
+      "id": "g_172",
+      "studentId": "s2_3",
+      "subject": "Limba engleza 1",
+      "grade": 7,
+      "credits": 2,
+      "date": "2024-01-20"
+    },
+    {
+      "id": "g_173",
+      "studentId": "s2_3",
+      "subject": "Analiza matematica II",
+      "grade": 8,
+      "credits": 5,
+      "date": "2024-06-15"
+    },
+    {
+      "id": "g_174",
+      "studentId": "s2_3",
+      "subject": "Matematici speciale",
+      "grade": 9,
+      "credits": 5,
+      "date": "2024-06-15"
+    },
+    {
+      "id": "g_175",
+      "studentId": "s2_3",
+      "subject": "Electrotehnica",
+      "grade": 10,
+      "credits": 5,
+      "date": "2024-06-15"
+    },
+    {
+      "id": "g_176",
+      "studentId": "s2_3",
+      "subject": "Grafica asistata de calculator",
+      "grade": 7,
+      "credits": 5,
+      "date": "2024-06-15"
+    },
+    {
+      "id": "g_177",
+      "studentId": "s2_3",
+      "subject": "Informatica aplicata",
+      "grade": 8,
+      "credits": 3,
+      "date": "2024-06-15"
+    },
+    {
+      "id": "g_178",
+      "studentId": "s2_3",
+      "subject": "Chimie",
+      "grade": 9,
+      "credits": 3,
+      "date": "2024-06-15"
+    },
+    {
+      "id": "g_179",
+      "studentId": "s2_3",
+      "subject": "Limba engleza 2",
+      "grade": 10,
+      "credits": 2,
+      "date": "2024-06-15"
+    },
+    {
+      "id": "g_180",
+      "studentId": "s2_3",
+      "subject": "Educatie fizica si sport I",
+      "grade": 7,
+      "credits": 2,
+      "date": "2024-06-15"
+    },
+    {
+      "id": "g_181",
+      "studentId": "s2_3",
+      "subject": "Metode numerice",
+      "grade": 8,
+      "credits": 4,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_182",
+      "studentId": "s2_3",
+      "subject": "Masurari si traductoare",
+      "grade": 9,
+      "credits": 4,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_183",
+      "studentId": "s2_3",
+      "subject": "Electronica digitala",
+      "grade": 10,
+      "credits": 5,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_184",
+      "studentId": "s2_3",
+      "subject": "Proiectarea algoritmilor",
+      "grade": 7,
+      "credits": 5,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_185",
+      "studentId": "s2_3",
+      "subject": "Analiza si sinteza dispozitivelor numerice",
+      "grade": 8,
+      "credits": 4,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_186",
+      "studentId": "s2_3",
+      "subject": "Modelarea proceselor",
+      "grade": 9,
+      "credits": 4,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_187",
+      "studentId": "s2_3",
+      "subject": "Limba engleza I - Redactarea documentelor tehnice",
+      "grade": 10,
+      "credits": 2,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_188",
+      "studentId": "s2_3",
+      "subject": "Educatie fizica si sport II",
+      "grade": 7,
+      "credits": 2,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_189",
+      "studentId": "s2_3",
+      "subject": "Teoria sistemelor I",
+      "grade": 8,
+      "credits": 5,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_190",
+      "studentId": "s2_3",
+      "subject": "Semnale si sisteme",
+      "grade": 9,
+      "credits": 4,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_191",
+      "studentId": "s2_3",
+      "subject": "Ingineria sistemelor de programe",
+      "grade": 10,
+      "credits": 5,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_192",
+      "studentId": "s2_3",
+      "subject": "Baze de date",
+      "grade": 7,
+      "credits": 5,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_193",
+      "studentId": "s2_3",
+      "subject": "Mecanica",
+      "grade": 8,
+      "credits": 4,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_194",
+      "studentId": "s2_3",
+      "subject": "Sisteme cu microprocesoare",
+      "grade": 9,
+      "credits": 5,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_195",
+      "studentId": "s2_3",
+      "subject": "Limba engleza II - Redactarea documentelor tehnice",
+      "grade": 10,
+      "credits": 2,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_196",
+      "studentId": "s2_3",
+      "subject": "Teoria sistemelor II",
+      "grade": 5,
+      "credits": 6,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_197",
+      "studentId": "s2_3",
+      "subject": "Ingineria reglarii automate I",
+      "grade": 6,
+      "credits": 5,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_198",
+      "studentId": "s2_3",
+      "subject": "Sisteme dinamice cu evenimente discrete",
+      "grade": 7,
+      "credits": 5,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_199",
+      "studentId": "s2_3",
+      "subject": "Identificarea sistemelor",
+      "grade": 8,
+      "credits": 5,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_200",
+      "studentId": "s2_3",
+      "subject": "Electronica de putere",
+      "grade": 5,
+      "credits": 5,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_201",
+      "studentId": "s2_3",
+      "subject": "Legislatie economica",
+      "grade": 4,
+      "credits": 2,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_202",
+      "studentId": "s2_3",
+      "subject": "Management si comunicare",
+      "grade": 4,
+      "credits": 2,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_203",
+      "studentId": "s2_3",
+      "subject": "Ingineria reglarii automate II",
+      "grade": 4,
+      "credits": 4,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_204",
+      "studentId": "s2_3",
+      "subject": "Sisteme de timp real",
+      "grade": 4,
+      "credits": 4,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_205",
+      "studentId": "s2_3",
+      "subject": "Informatica industriala",
+      "grade": 4,
+      "credits": 3,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_206",
+      "studentId": "s2_3",
+      "subject": "Echipamente de automatizare electrice si electronice",
+      "grade": 4,
+      "credits": 3,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_207",
+      "studentId": "s2_3",
+      "subject": "Echipamente hidro-pneumatice",
+      "grade": 4,
+      "credits": 3,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_208",
+      "studentId": "s2_3",
+      "subject": "Transmisia datelor",
+      "grade": 4,
+      "credits": 3,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_209",
+      "studentId": "s2_3",
+      "subject": "Practica de domeniu (TOTAL)",
+      "grade": 4,
+      "credits": 4,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_210",
+      "studentId": "s2_3",
+      "subject": "Practica de specialitate (TOTAL)",
+      "grade": 4,
+      "credits": 6,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_211",
+      "studentId": "s1_4",
+      "subject": "Analiza matematica I",
+      "grade": 10,
+      "credits": 5,
+      "date": "2023-01-20"
+    },
+    {
+      "id": "g_212",
+      "studentId": "s1_4",
+      "subject": "Algebra liniara, geometrie analitica si diferentiala",
+      "grade": 7,
+      "credits": 4,
+      "date": "2023-01-20"
+    },
+    {
+      "id": "g_213",
+      "studentId": "s1_4",
+      "subject": "Arhitectura calculatoarelor",
+      "grade": 8,
+      "credits": 5,
+      "date": "2023-01-20"
+    },
+    {
+      "id": "g_214",
+      "studentId": "s1_4",
+      "subject": "Circuite electronice liniare",
+      "grade": 9,
+      "credits": 5,
+      "date": "2023-01-20"
+    },
+    {
+      "id": "g_215",
+      "studentId": "s1_4",
+      "subject": "Programarea calculatoarelor si limbaje de programare",
+      "grade": 10,
+      "credits": 5,
+      "date": "2023-01-20"
+    },
+    {
+      "id": "g_216",
+      "studentId": "s1_4",
+      "subject": "Fizica",
+      "grade": 7,
+      "credits": 4,
+      "date": "2023-01-20"
+    },
+    {
+      "id": "g_217",
+      "studentId": "s1_4",
+      "subject": "Limba engleza 1",
+      "grade": 8,
+      "credits": 2,
+      "date": "2023-01-20"
+    },
+    {
+      "id": "g_218",
+      "studentId": "s1_4",
+      "subject": "Analiza matematica II",
+      "grade": 9,
+      "credits": 5,
+      "date": "2023-06-15"
+    },
+    {
+      "id": "g_219",
+      "studentId": "s1_4",
+      "subject": "Matematici speciale",
+      "grade": 10,
+      "credits": 5,
+      "date": "2023-06-15"
+    },
+    {
+      "id": "g_220",
+      "studentId": "s1_4",
+      "subject": "Electrotehnica",
+      "grade": 7,
+      "credits": 5,
+      "date": "2023-06-15"
+    },
+    {
+      "id": "g_221",
+      "studentId": "s1_4",
+      "subject": "Grafica asistata de calculator",
+      "grade": 8,
+      "credits": 5,
+      "date": "2023-06-15"
+    },
+    {
+      "id": "g_222",
+      "studentId": "s1_4",
+      "subject": "Informatica aplicata",
+      "grade": 9,
+      "credits": 3,
+      "date": "2023-06-15"
+    },
+    {
+      "id": "g_223",
+      "studentId": "s1_4",
+      "subject": "Chimie",
+      "grade": 10,
+      "credits": 3,
+      "date": "2023-06-15"
+    },
+    {
+      "id": "g_224",
+      "studentId": "s1_4",
+      "subject": "Limba engleza 2",
+      "grade": 7,
+      "credits": 2,
+      "date": "2023-06-15"
+    },
+    {
+      "id": "g_225",
+      "studentId": "s1_4",
+      "subject": "Educatie fizica si sport I",
+      "grade": 8,
+      "credits": 2,
+      "date": "2023-06-15"
+    },
+    {
+      "id": "g_226",
+      "studentId": "s1_4",
+      "subject": "Metode numerice",
+      "grade": 9,
+      "credits": 4,
+      "date": "2024-01-20"
+    },
+    {
+      "id": "g_227",
+      "studentId": "s1_4",
+      "subject": "Masurari si traductoare",
+      "grade": 10,
+      "credits": 4,
+      "date": "2024-01-20"
+    },
+    {
+      "id": "g_228",
+      "studentId": "s1_4",
+      "subject": "Electronica digitala",
+      "grade": 7,
+      "credits": 5,
+      "date": "2024-01-20"
+    },
+    {
+      "id": "g_229",
+      "studentId": "s1_4",
+      "subject": "Proiectarea algoritmilor",
+      "grade": 8,
+      "credits": 5,
+      "date": "2024-01-20"
+    },
+    {
+      "id": "g_230",
+      "studentId": "s1_4",
+      "subject": "Analiza si sinteza dispozitivelor numerice",
+      "grade": 9,
+      "credits": 4,
+      "date": "2024-01-20"
+    },
+    {
+      "id": "g_231",
+      "studentId": "s1_4",
+      "subject": "Modelarea proceselor",
+      "grade": 10,
+      "credits": 4,
+      "date": "2024-01-20"
+    },
+    {
+      "id": "g_232",
+      "studentId": "s1_4",
+      "subject": "Limba engleza I - Redactarea documentelor tehnice",
+      "grade": 7,
+      "credits": 2,
+      "date": "2024-01-20"
+    },
+    {
+      "id": "g_233",
+      "studentId": "s1_4",
+      "subject": "Educatie fizica si sport II",
+      "grade": 8,
+      "credits": 2,
+      "date": "2024-01-20"
+    },
+    {
+      "id": "g_234",
+      "studentId": "s1_4",
+      "subject": "Teoria sistemelor I",
+      "grade": 9,
+      "credits": 5,
+      "date": "2024-06-15"
+    },
+    {
+      "id": "g_235",
+      "studentId": "s1_4",
+      "subject": "Semnale si sisteme",
+      "grade": 10,
+      "credits": 4,
+      "date": "2024-06-15"
+    },
+    {
+      "id": "g_236",
+      "studentId": "s1_4",
+      "subject": "Ingineria sistemelor de programe",
+      "grade": 7,
+      "credits": 5,
+      "date": "2024-06-15"
+    },
+    {
+      "id": "g_237",
+      "studentId": "s1_4",
+      "subject": "Baze de date",
+      "grade": 8,
+      "credits": 5,
+      "date": "2024-06-15"
+    },
+    {
+      "id": "g_238",
+      "studentId": "s1_4",
+      "subject": "Mecanica",
+      "grade": 9,
+      "credits": 4,
+      "date": "2024-06-15"
+    },
+    {
+      "id": "g_239",
+      "studentId": "s1_4",
+      "subject": "Sisteme cu microprocesoare",
+      "grade": 10,
+      "credits": 5,
+      "date": "2024-06-15"
+    },
+    {
+      "id": "g_240",
+      "studentId": "s1_4",
+      "subject": "Limba engleza II - Redactarea documentelor tehnice",
+      "grade": 7,
+      "credits": 2,
+      "date": "2024-06-15"
+    },
+    {
+      "id": "g_241",
+      "studentId": "s1_4",
+      "subject": "Teoria sistemelor II",
+      "grade": 8,
+      "credits": 6,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_242",
+      "studentId": "s1_4",
+      "subject": "Ingineria reglarii automate I",
+      "grade": 9,
+      "credits": 5,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_243",
+      "studentId": "s1_4",
+      "subject": "Sisteme dinamice cu evenimente discrete",
+      "grade": 10,
+      "credits": 5,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_244",
+      "studentId": "s1_4",
+      "subject": "Identificarea sistemelor",
+      "grade": 7,
+      "credits": 5,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_245",
+      "studentId": "s1_4",
+      "subject": "Electronica de putere",
+      "grade": 8,
+      "credits": 5,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_246",
+      "studentId": "s1_4",
+      "subject": "Legislatie economica",
+      "grade": 9,
+      "credits": 2,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_247",
+      "studentId": "s1_4",
+      "subject": "Management si comunicare",
+      "grade": 10,
+      "credits": 2,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_248",
+      "studentId": "s1_4",
+      "subject": "Ingineria reglarii automate II",
+      "grade": 7,
+      "credits": 4,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_249",
+      "studentId": "s1_4",
+      "subject": "Sisteme de timp real",
+      "grade": 8,
+      "credits": 4,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_250",
+      "studentId": "s1_4",
+      "subject": "Informatica industriala",
+      "grade": 9,
+      "credits": 3,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_251",
+      "studentId": "s1_4",
+      "subject": "Echipamente de automatizare electrice si electronice",
+      "grade": 10,
+      "credits": 3,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_252",
+      "studentId": "s1_4",
+      "subject": "Echipamente hidro-pneumatice",
+      "grade": 7,
+      "credits": 3,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_253",
+      "studentId": "s1_4",
+      "subject": "Transmisia datelor",
+      "grade": 8,
+      "credits": 3,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_254",
+      "studentId": "s1_4",
+      "subject": "Practica de domeniu (TOTAL)",
+      "grade": 9,
+      "credits": 4,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_255",
+      "studentId": "s1_4",
+      "subject": "Practica de specialitate (TOTAL)",
+      "grade": 10,
+      "credits": 6,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_256",
+      "studentId": "s1_4",
+      "subject": "Sisteme de control distribuit",
+      "grade": 7,
+      "credits": 5,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_257",
+      "studentId": "s1_4",
+      "subject": "Sisteme de conducere a robotilor",
+      "grade": 8,
+      "credits": 5,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_258",
+      "studentId": "s1_4",
+      "subject": "Sisteme de conducere a proceselor continue",
+      "grade": 9,
+      "credits": 5,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_259",
+      "studentId": "s1_4",
+      "subject": "Fiabilitate si diagnoza",
+      "grade": 10,
+      "credits": 5,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_260",
+      "studentId": "s1_4",
+      "subject": "Retele de calculatoare",
+      "grade": 6,
+      "credits": 4,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_261",
+      "studentId": "s1_4",
+      "subject": "Managementul proiectelor",
+      "grade": 7,
+      "credits": 4,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_262",
+      "studentId": "s1_4",
+      "subject": "Marketing",
+      "grade": 8,
+      "credits": 2,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_263",
+      "studentId": "s1_4",
+      "subject": "Conducerea proceselor industriale",
+      "grade": 9,
+      "credits": 5,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_264",
+      "studentId": "s1_4",
+      "subject": "Conducerea numerica a masinilor unelte",
+      "grade": 10,
+      "credits": 5,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_265",
+      "studentId": "s1_4",
+      "subject": "Optimizari",
+      "grade": 6,
+      "credits": 5,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_266",
+      "studentId": "s1_4",
+      "subject": "Estimatoare in controlul sistemelor dinamice",
+      "grade": 7,
+      "credits": 5,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_267",
+      "studentId": "s1_4",
+      "subject": "Metodologia intocmirii proiectelor",
+      "grade": 8,
+      "credits": 2,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_268",
+      "studentId": "s1_4",
+      "subject": "Elaborarea proiectului de diploma",
+      "grade": 9,
+      "credits": 4,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_269",
+      "studentId": "s1_4",
+      "subject": "Practica pentru proiectul de diploma",
+      "grade": 10,
+      "credits": 4,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_270",
+      "studentId": "s2_4",
+      "subject": "Analiza matematica I",
+      "grade": 9,
+      "credits": 5,
+      "date": "2023-01-20"
+    },
+    {
+      "id": "g_271",
+      "studentId": "s2_4",
+      "subject": "Algebra liniara, geometrie analitica si diferentiala",
+      "grade": 10,
+      "credits": 4,
+      "date": "2023-01-20"
+    },
+    {
+      "id": "g_272",
+      "studentId": "s2_4",
+      "subject": "Arhitectura calculatoarelor",
+      "grade": 7,
+      "credits": 5,
+      "date": "2023-01-20"
+    },
+    {
+      "id": "g_273",
+      "studentId": "s2_4",
+      "subject": "Circuite electronice liniare",
+      "grade": 8,
+      "credits": 5,
+      "date": "2023-01-20"
+    },
+    {
+      "id": "g_274",
+      "studentId": "s2_4",
+      "subject": "Programarea calculatoarelor si limbaje de programare",
+      "grade": 9,
+      "credits": 5,
+      "date": "2023-01-20"
+    },
+    {
+      "id": "g_275",
+      "studentId": "s2_4",
+      "subject": "Fizica",
+      "grade": 10,
+      "credits": 4,
+      "date": "2023-01-20"
+    },
+    {
+      "id": "g_276",
+      "studentId": "s2_4",
+      "subject": "Limba engleza 1",
+      "grade": 7,
+      "credits": 2,
+      "date": "2023-01-20"
+    },
+    {
+      "id": "g_277",
+      "studentId": "s2_4",
+      "subject": "Analiza matematica II",
+      "grade": 8,
+      "credits": 5,
+      "date": "2023-06-15"
+    },
+    {
+      "id": "g_278",
+      "studentId": "s2_4",
+      "subject": "Matematici speciale",
+      "grade": 9,
+      "credits": 5,
+      "date": "2023-06-15"
+    },
+    {
+      "id": "g_279",
+      "studentId": "s2_4",
+      "subject": "Electrotehnica",
+      "grade": 10,
+      "credits": 5,
+      "date": "2023-06-15"
+    },
+    {
+      "id": "g_280",
+      "studentId": "s2_4",
+      "subject": "Grafica asistata de calculator",
+      "grade": 7,
+      "credits": 5,
+      "date": "2023-06-15"
+    },
+    {
+      "id": "g_281",
+      "studentId": "s2_4",
+      "subject": "Informatica aplicata",
+      "grade": 8,
+      "credits": 3,
+      "date": "2023-06-15"
+    },
+    {
+      "id": "g_282",
+      "studentId": "s2_4",
+      "subject": "Chimie",
+      "grade": 9,
+      "credits": 3,
+      "date": "2023-06-15"
+    },
+    {
+      "id": "g_283",
+      "studentId": "s2_4",
+      "subject": "Limba engleza 2",
+      "grade": 10,
+      "credits": 2,
+      "date": "2023-06-15"
+    },
+    {
+      "id": "g_284",
+      "studentId": "s2_4",
+      "subject": "Educatie fizica si sport I",
+      "grade": 7,
+      "credits": 2,
+      "date": "2023-06-15"
+    },
+    {
+      "id": "g_285",
+      "studentId": "s2_4",
+      "subject": "Metode numerice",
+      "grade": 8,
+      "credits": 4,
+      "date": "2024-01-20"
+    },
+    {
+      "id": "g_286",
+      "studentId": "s2_4",
+      "subject": "Masurari si traductoare",
+      "grade": 9,
+      "credits": 4,
+      "date": "2024-01-20"
+    },
+    {
+      "id": "g_287",
+      "studentId": "s2_4",
+      "subject": "Electronica digitala",
+      "grade": 10,
+      "credits": 5,
+      "date": "2024-01-20"
+    },
+    {
+      "id": "g_288",
+      "studentId": "s2_4",
+      "subject": "Proiectarea algoritmilor",
+      "grade": 7,
+      "credits": 5,
+      "date": "2024-01-20"
+    },
+    {
+      "id": "g_289",
+      "studentId": "s2_4",
+      "subject": "Analiza si sinteza dispozitivelor numerice",
+      "grade": 8,
+      "credits": 4,
+      "date": "2024-01-20"
+    },
+    {
+      "id": "g_290",
+      "studentId": "s2_4",
+      "subject": "Modelarea proceselor",
+      "grade": 9,
+      "credits": 4,
+      "date": "2024-01-20"
+    },
+    {
+      "id": "g_291",
+      "studentId": "s2_4",
+      "subject": "Limba engleza I - Redactarea documentelor tehnice",
+      "grade": 10,
+      "credits": 2,
+      "date": "2024-01-20"
+    },
+    {
+      "id": "g_292",
+      "studentId": "s2_4",
+      "subject": "Educatie fizica si sport II",
+      "grade": 7,
+      "credits": 2,
+      "date": "2024-01-20"
+    },
+    {
+      "id": "g_293",
+      "studentId": "s2_4",
+      "subject": "Teoria sistemelor I",
+      "grade": 8,
+      "credits": 5,
+      "date": "2024-06-15"
+    },
+    {
+      "id": "g_294",
+      "studentId": "s2_4",
+      "subject": "Semnale si sisteme",
+      "grade": 9,
+      "credits": 4,
+      "date": "2024-06-15"
+    },
+    {
+      "id": "g_295",
+      "studentId": "s2_4",
+      "subject": "Ingineria sistemelor de programe",
+      "grade": 10,
+      "credits": 5,
+      "date": "2024-06-15"
+    },
+    {
+      "id": "g_296",
+      "studentId": "s2_4",
+      "subject": "Baze de date",
+      "grade": 7,
+      "credits": 5,
+      "date": "2024-06-15"
+    },
+    {
+      "id": "g_297",
+      "studentId": "s2_4",
+      "subject": "Mecanica",
+      "grade": 8,
+      "credits": 4,
+      "date": "2024-06-15"
+    },
+    {
+      "id": "g_298",
+      "studentId": "s2_4",
+      "subject": "Sisteme cu microprocesoare",
+      "grade": 9,
+      "credits": 5,
+      "date": "2024-06-15"
+    },
+    {
+      "id": "g_299",
+      "studentId": "s2_4",
+      "subject": "Limba engleza II - Redactarea documentelor tehnice",
+      "grade": 10,
+      "credits": 2,
+      "date": "2024-06-15"
+    },
+    {
+      "id": "g_300",
+      "studentId": "s2_4",
+      "subject": "Teoria sistemelor II",
+      "grade": 7,
+      "credits": 6,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_301",
+      "studentId": "s2_4",
+      "subject": "Ingineria reglarii automate I",
+      "grade": 8,
+      "credits": 5,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_302",
+      "studentId": "s2_4",
+      "subject": "Sisteme dinamice cu evenimente discrete",
+      "grade": 9,
+      "credits": 5,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_303",
+      "studentId": "s2_4",
+      "subject": "Identificarea sistemelor",
+      "grade": 10,
+      "credits": 5,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_304",
+      "studentId": "s2_4",
+      "subject": "Electronica de putere",
+      "grade": 7,
+      "credits": 5,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_305",
+      "studentId": "s2_4",
+      "subject": "Legislatie economica",
+      "grade": 8,
+      "credits": 2,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_306",
+      "studentId": "s2_4",
+      "subject": "Management si comunicare",
+      "grade": 9,
+      "credits": 2,
+      "date": "2025-01-20"
+    },
+    {
+      "id": "g_307",
+      "studentId": "s2_4",
+      "subject": "Ingineria reglarii automate II",
+      "grade": 10,
+      "credits": 4,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_308",
+      "studentId": "s2_4",
+      "subject": "Sisteme de timp real",
+      "grade": 7,
+      "credits": 4,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_309",
+      "studentId": "s2_4",
+      "subject": "Informatica industriala",
+      "grade": 8,
+      "credits": 3,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_310",
+      "studentId": "s2_4",
+      "subject": "Echipamente de automatizare electrice si electronice",
+      "grade": 9,
+      "credits": 3,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_311",
+      "studentId": "s2_4",
+      "subject": "Echipamente hidro-pneumatice",
+      "grade": 10,
+      "credits": 3,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_312",
+      "studentId": "s2_4",
+      "subject": "Transmisia datelor",
+      "grade": 7,
+      "credits": 3,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_313",
+      "studentId": "s2_4",
+      "subject": "Practica de domeniu (TOTAL)",
+      "grade": 8,
+      "credits": 4,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_314",
+      "studentId": "s2_4",
+      "subject": "Practica de specialitate (TOTAL)",
+      "grade": 9,
+      "credits": 6,
+      "date": "2025-06-15"
+    },
+    {
+      "id": "g_315",
+      "studentId": "s2_4",
+      "subject": "Sisteme de control distribuit",
+      "grade": 5,
+      "credits": 5,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_316",
+      "studentId": "s2_4",
+      "subject": "Sisteme de conducere a robotilor",
+      "grade": 6,
+      "credits": 5,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_317",
+      "studentId": "s2_4",
+      "subject": "Sisteme de conducere a proceselor continue",
+      "grade": 7,
+      "credits": 5,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_318",
+      "studentId": "s2_4",
+      "subject": "Fiabilitate si diagnoza",
+      "grade": 8,
+      "credits": 5,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_319",
+      "studentId": "s2_4",
+      "subject": "Retele de calculatoare",
+      "grade": 5,
+      "credits": 4,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_320",
+      "studentId": "s2_4",
+      "subject": "Managementul proiectelor",
+      "grade": 4,
+      "credits": 4,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_321",
+      "studentId": "s2_4",
+      "subject": "Marketing",
+      "grade": 4,
+      "credits": 2,
+      "date": "2026-01-20"
+    },
+    {
+      "id": "g_322",
+      "studentId": "s2_4",
+      "subject": "Conducerea proceselor industriale",
+      "grade": 4,
+      "credits": 5,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_323",
+      "studentId": "s2_4",
+      "subject": "Conducerea numerica a masinilor unelte",
+      "grade": 4,
+      "credits": 5,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_324",
+      "studentId": "s2_4",
+      "subject": "Optimizari",
+      "grade": 4,
+      "credits": 5,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_325",
+      "studentId": "s2_4",
+      "subject": "Estimatoare in controlul sistemelor dinamice",
+      "grade": 4,
+      "credits": 5,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_326",
+      "studentId": "s2_4",
+      "subject": "Metodologia intocmirii proiectelor",
+      "grade": 4,
+      "credits": 2,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_327",
+      "studentId": "s2_4",
+      "subject": "Elaborarea proiectului de diploma",
+      "grade": 4,
+      "credits": 4,
+      "date": "2026-06-15"
+    },
+    {
+      "id": "g_328",
+      "studentId": "s2_4",
+      "subject": "Practica pentru proiectul de diploma",
+      "grade": 4,
+      "credits": 4,
+      "date": "2026-06-15"
     }
   ],
   "announcements": [
     {
       "id": "a1",
-      "title": "Suspendare cursuri Tehnologii Distribuite",
-      "content": "Cursul de Tehnologii Distribuite din data de 1 Iunie se va recupera ulterior din cauza zilei libere legale.",
-      "author": "Prof. Dr. Ing. Dobra",
+      "title": "Sistemul Academic de Credite UTCN a fost actualizat",
+      "content": "Programa academică oficială a fost streamline-uită la exact 60 ECTS per an de studiu. Toți studenții au fost înrolați automat în materiile aferente anilor lor de studiu.",
+      "author": "Secretariat UTCN",
       "category": "Administrativ",
-      "date": "2026-05-28T10:00:00.000Z"
-    },
-    {
-      "id": "a2",
-      "title": "Sesiune de restanțe - Toamnă",
-      "content": "Planificarea examenelor de restanță a fost publicată pe site-ul facultății. Vă rugăm să vă înscrieți până la data de 1 Septembrie.",
-      "author": "Secretariat",
-      "category": "Examene",
-      "date": "2026-05-25T14:30:00.000Z"
-    },
-    {
-      "id": "a3",
-      "title": "Burse de merit semestrul II",
-      "content": "Listele provizorii cu studenții beneficiari ai burselor de merit au fost afișate la avizierul facultății. Contestațiile se pot depune în termen de 3 zile lucrătoare.",
-      "author": "Decanat",
-      "category": "Burse",
-      "date": "2026-05-29T08:00:00.000Z"
+      "date": "2026-05-30T10:00:00.000Z"
     }
   ]
 }
