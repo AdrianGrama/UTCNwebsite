@@ -41,7 +41,102 @@ const AcademicCountdown = () => {
   );
 };
 
-
+const QuickActions = () => {
+  const { toggleTheme, user } = useAuth();
+  
+  return (
+    <div className="card" style={{ padding: '1.25rem' }}>
+      <h3 style={{ fontSize: '1.05rem', fontWeight: '600', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+        ⚡ Comenzi Rapide
+      </h3>
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem' }}>
+        {user.role === 'student' ? (
+          <>
+            <Link to="/grades" className="btn btn-secondary" style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '0.5rem',
+              padding: '0.75rem',
+              textAlign: 'center',
+              fontSize: '0.85rem',
+              textDecoration: 'none',
+              borderRadius: '10px'
+            }}>
+              <span style={{ fontSize: '1.3rem' }}>📈</span>
+              <span>Notele Mele</span>
+            </Link>
+            <Link to="/announcements" className="btn btn-secondary" style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '0.5rem',
+              padding: '0.75rem',
+              textAlign: 'center',
+              fontSize: '0.85rem',
+              textDecoration: 'none',
+              borderRadius: '10px'
+            }}>
+              <span style={{ fontSize: '1.3rem' }}>📢</span>
+              <span>Avizier</span>
+            </Link>
+          </>
+        ) : (
+          <>
+            <Link to="/grades" className="btn btn-secondary" style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '0.5rem',
+              padding: '0.75rem',
+              textAlign: 'center',
+              fontSize: '0.85rem',
+              textDecoration: 'none',
+              borderRadius: '10px'
+            }}>
+              <span style={{ fontSize: '1.3rem' }}>➕</span>
+              <span>Adaugă Notă</span>
+            </Link>
+            <Link to="/announcements" className="btn btn-secondary" style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '0.5rem',
+              padding: '0.75rem',
+              textAlign: 'center',
+              fontSize: '0.85rem',
+              textDecoration: 'none',
+              borderRadius: '10px'
+            }}>
+              <span style={{ fontSize: '1.3rem' }}>📢</span>
+              <span>Publică Anunț</span>
+            </Link>
+          </>
+        )}
+        <button onClick={toggleTheme} className="btn btn-secondary" style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+          gap: '0.5rem',
+          padding: '0.75rem',
+          textAlign: 'center',
+          fontSize: '0.85rem',
+          gridColumn: 'span 2',
+          borderRadius: '10px',
+          cursor: 'pointer'
+        }}>
+          <span style={{ fontSize: '1.3rem' }}>🌓</span>
+          <span>Schimbă Tema</span>
+        </button>
+      </div>
+    </div>
+  );
+};
 
 const Dashboard = () => {
   const { user, token, theme, isServerWaking } = useAuth();
@@ -117,6 +212,57 @@ const Dashboard = () => {
   const studentStats = user.role === 'student' ? calculateStudentStats() : null;
   const teacherStats = user.role === 'teacher' ? calculateTeacherStats() : null;
 
+  // Construim activitățile recente
+  const getRecentActivities = () => {
+    const activities = [];
+
+    // Adăugăm notele la activități
+    grades.forEach(g => {
+      if (user.role === 'student') {
+        activities.push({
+          id: `act-grade-${g.id}`,
+          type: 'grade',
+          title: 'Notă nouă adăugată',
+          description: `Ai primit nota ${g.grade} la materia "${g.subject}" (${g.credits} ECTS).`,
+          date: new Date(g.date || new Date()),
+          icon: '📈',
+          color: '#10b981'
+        });
+      } else if (user.role === 'teacher') {
+        activities.push({
+          id: `act-grade-${g.id}`,
+          type: 'grade',
+          title: 'Notă nouă acordată',
+          description: `Ai acordat nota ${g.grade} studentului ${g.studentName || 'Necunoscut'} la materia "${g.subject}".`,
+          date: new Date(g.date || new Date()),
+          icon: '📝',
+          color: '#dc2626'
+        });
+      }
+    });
+
+    // Adăugăm anunțurile la activități
+    announcements.forEach(ann => {
+      const isAuthor = ann.author === user.name;
+      activities.push({
+        id: `act-ann-${ann.id}`,
+        type: 'announcement',
+        title: isAuthor ? 'Anunț publicat de tine' : 'Anunț nou pe avizier',
+        description: isAuthor 
+          ? `Ai publicat anunțul "${ann.title}" în categoria ${ann.category}.`
+          : `Profesorul ${ann.author} a publicat anunțul "${ann.title}".`,
+        date: new Date(ann.date || new Date()),
+        icon: '📢',
+        color: '#fbbf24'
+      });
+    });
+
+    // Sortăm descrescător după dată (cele mai noi primele)
+    return activities.sort((a, b) => b.date - a.date).slice(0, 5);
+  };
+
+  const recentActivities = getRecentActivities();
+
   return (
     <div>
       <div style={{ marginBottom: '2rem' }}>
@@ -164,34 +310,84 @@ const Dashboard = () => {
       </div>
 
       <div className="dashboard-grid">
-        {/* Coloana Stângă: Anunțuri recente */}
-        <div>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
-            <h2>Noutăți și Anunțuri</h2>
-            <Link to="/announcements" style={{ fontSize: '0.9rem', color: 'var(--accent-primary)', textDecoration: 'none', fontWeight: '500' }}>
-              Vezi toate
-            </Link>
+        {/* Coloana Stângă: Anunțuri recente și Activitate recentă */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+          <div>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
+              <h2>Noutăți și Anunțuri</h2>
+              <Link to="/announcements" style={{ fontSize: '0.9rem', color: 'var(--accent-primary)', textDecoration: 'none', fontWeight: '500' }}>
+                Vezi toate
+              </Link>
+            </div>
+
+            <div className="announcement-list">
+              {announcements.slice(0, 3).map((ann) => (
+                <div key={ann.id} className="card announcement-item">
+                  <div className="announcement-meta">
+                    <span className="badge badge-info">{ann.category}</span>
+                    <span>📅 {new Date(ann.date).toLocaleDateString('ro-RO')}</span>
+                  </div>
+                  <div className="announcement-title">{ann.title}</div>
+                  <div className="announcement-body">{ann.content}</div>
+                  <div style={{ marginTop: '0.75rem', fontSize: '0.8rem', color: 'var(--text-secondary)', textAlign: 'right' }}>
+                    Autor: <em>{ann.author}</em>
+                  </div>
+                </div>
+              ))}
+              {announcements.length === 0 && (
+                <div className="card" style={{ textAlign: 'center', color: 'var(--text-secondary)' }}>
+                  Nu există anunțuri postate recent.
+                </div>
+              )}
+            </div>
           </div>
 
-          <div className="announcement-list">
-            {announcements.slice(0, 3).map((ann) => (
-              <div key={ann.id} className="card announcement-item">
-                <div className="announcement-meta">
-                  <span className="badge badge-info">{ann.category}</span>
-                  <span>📅 {new Date(ann.date).toLocaleDateString('ro-RO')}</span>
+          {/* Activitate Recentă */}
+          <div>
+            <h2 style={{ marginBottom: '1rem' }}>Activitate Recentă</h2>
+            <div className="card" style={{ display: 'flex', flexDirection: 'column', padding: '1.25rem' }}>
+              {recentActivities.map((act, idx) => (
+                <div key={act.id} style={{
+                  display: 'flex',
+                  alignItems: 'flex-start',
+                  gap: '1rem',
+                  padding: '0.75rem 0',
+                  borderBottom: idx === recentActivities.length - 1 ? 'none' : '1px solid var(--border-color)',
+                  transition: 'var(--transition)'
+                }}>
+                  <div style={{
+                    width: '36px',
+                    height: '36px',
+                    borderRadius: '50%',
+                    backgroundColor: `${act.color}15`,
+                    border: `1px solid ${act.color}30`,
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontSize: '1.1rem',
+                    flexShrink: 0
+                  }}>
+                    {act.icon}
+                  </div>
+                  <div style={{ flex: 1 }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.2rem' }}>
+                      <span style={{ fontWeight: '600', fontSize: '0.9rem', color: 'var(--text-primary)' }}>{act.title}</span>
+                      <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)' }}>
+                        {act.date.toLocaleDateString('ro-RO')}
+                      </span>
+                    </div>
+                    <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: 1.4 }}>
+                      {act.description}
+                    </p>
+                  </div>
                 </div>
-                <div className="announcement-title">{ann.title}</div>
-                <div className="announcement-body">{ann.content}</div>
-                <div style={{ marginTop: '0.75rem', fontSize: '0.8rem', color: 'var(--text-secondary)', textAlign: 'right' }}>
-                  Autor: <em>{ann.author}</em>
+              ))}
+              {recentActivities.length === 0 && (
+                <div style={{ textAlign: 'center', color: 'var(--text-secondary)', padding: '1rem 0' }}>
+                  Nu există activitate recentă înregistrată.
                 </div>
-              </div>
-            ))}
-            {announcements.length === 0 && (
-              <div className="card" style={{ textAlign: 'center', color: 'var(--text-secondary)' }}>
-                Nu există anunțuri postate recent.
-              </div>
-            )}
+              )}
+            </div>
           </div>
         </div>
 
@@ -200,6 +396,9 @@ const Dashboard = () => {
           
           {/* Widget Countdown */}
           <AcademicCountdown />
+
+          {/* Comenzi Rapide */}
+          <QuickActions />
 
           {/* Profil Utilizator */}
           <div>
