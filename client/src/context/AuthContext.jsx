@@ -1,7 +1,6 @@
 import React, { createContext, useState, useEffect, useContext } from 'react';
 import { API_BASE_URL } from '../config';
 
-
 const AuthContext = createContext(null);
 
 export const AuthProvider = ({ children }) => {
@@ -9,6 +8,22 @@ export const AuthProvider = ({ children }) => {
   const [token, setToken] = useState(localStorage.getItem('token') || '');
   const [loading, setLoading] = useState(true);
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
+  const [isServerWaking, setIsServerWaking] = useState(false);
+
+  // Funcție de fetch personalizată care monitorizează latența API-ului (Render Cold Start)
+  const fetchAPI = async (url, options = {}) => {
+    const timer = setTimeout(() => {
+      setIsServerWaking(true);
+    }, 2000); // Dacă durează mai mult de 2 secunde, considerăm că serverul "se trezește"
+
+    try {
+      const res = await fetch(url, options);
+      return res;
+    } finally {
+      clearTimeout(timer);
+      setIsServerWaking(false);
+    }
+  };
 
   // Aplicăm tema la nivel de document
   useEffect(() => {
@@ -21,7 +36,7 @@ export const AuthProvider = ({ children }) => {
     const verifyToken = async () => {
       if (token) {
         try {
-          const res = await fetch(`${API_BASE_URL}/api/auth/me`, {
+          const res = await fetchAPI(`${API_BASE_URL}/api/auth/me`, {
             headers: {
               'Authorization': `Bearer ${token}`
             }
@@ -45,7 +60,7 @@ export const AuthProvider = ({ children }) => {
   }, [token]);
 
   const login = async (username, password) => {
-    const res = await fetch(`${API_BASE_URL}/api/auth/login`, {
+    const res = await fetchAPI(`${API_BASE_URL}/api/auth/login`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -75,7 +90,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   return (
-    <AuthContext.Provider value={{ user, token, login, logout, loading, theme, toggleTheme }}>
+    <AuthContext.Provider value={{ user, token, login, logout, loading, theme, toggleTheme, isServerWaking, fetchAPI }}>
       {children}
     </AuthContext.Provider>
   );

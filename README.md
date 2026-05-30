@@ -66,7 +66,7 @@ Pentru a testa cele două perspective din aplicație (Student vs. Profesor/Admin
 | :--- | :--- | :--- | :--- | :--- |
 | **Student 1** | `popescu.ion` | `student123` | Ion Popescu | Calculatoare (RO) / 30331 |
 | **Student 2** | `ionescu.maria` | `student123` | Maria Ionescu | Calculatoare (EN) / 30332 |
-| **Profesor** | `dobra.fecior` | `prof123` | Prof. Dr. Ing. Dobra | Departament Calculatoare |
+| **Profesor** | `lisman.evreul` | `prof123` | Lisman Evreul | Departament Automatică |
 
 ---
 
@@ -96,3 +96,22 @@ Baza de date este un fișier JSON simplu. Structura generală conține:
 * `users` - lista utilizatorilor (studenți și profesori).
 * `grades` - notele legate de id-ul studentului (`studentId`).
 * `announcements` - postările de pe avizier cu autor, dată și categorie.
+
+---
+
+## 🧪 Testare Automată & API
+
+Am adăugat un set de teste de integrare backend automate și o colecție Postman pentru a asigura corectitudinea fluxurilor de date și a securității.
+
+### 1. Rularea Testelor Automate (Jest & Supertest)
+Pentru a rula testele de integrare (care verifică autentificarea, controlul accesului bazat pe roluri și izolarea datelor studenților):
+```bash
+yarn --cwd server test
+```
+*Aceste teste sunt rulate cu o bază de date izolată, asigurându-se că porturile nu se blochează.*
+
+### 2. Colecția Postman
+Colecția Postman complet pre-configurată se află în [UTCN_Portal_Postman.json](file:///Users/gramaadrian/Desktop/Facultate/UTCNwebsite/server/tests/UTCN_Portal_Postman.json).
+* **Import în Postman:** Deschideți Postman, apăsați pe **Import** și selectați fișierul `UTCN_Portal_Postman.json`.
+* **Variabile de Mediu (Environment):** Colecția folosește variabila `{{api_url}}`. Puteți configura un mediu în Postman cu `api_url` setat pe `http://localhost:5001` (sau URL-ul serverului de pe Render).
+* **Script de Token Automat:** După rularea request-ului `Login Student` sau `Login Profesor`, token-ul JWT este extras automat din răspuns și setat ca variabilă globală (`token`), fiind folosit la toate request-urile ulterioare ce necesită autorizare.

@@ -18,7 +18,7 @@ const Login = () => {
     const [error, setError] = useState('');
     const [isSubmitting, setIsSubmitting] = useState(false);
 
-    const { login, user, theme } = useAuth();
+    const { login, user, theme, isServerWaking } = useAuth();
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -81,6 +81,31 @@ const Login = () => {
 
     return (
         <main className="modern-login-page">
+            {isServerWaking && (
+                <div style={{
+                    position: 'fixed',
+                    bottom: '24px',
+                    left: '50%',
+                    transform: 'translateX(-50%)',
+                    backgroundColor: 'var(--warning)',
+                    color: '#0f172a',
+                    padding: '0.9rem 1.5rem',
+                    borderRadius: '16px',
+                    boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.15)',
+                    zIndex: 9999,
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '0.75rem',
+                    fontWeight: '700',
+                    fontSize: '0.9rem',
+                    border: '1px solid rgba(245, 158, 11, 0.3)',
+                    backdropFilter: 'blur(8px)',
+                    animation: 'fadeInUp 0.3s ease-out'
+                }}>
+                    <span>⏳</span>
+                    <span>Se trezește serverul de pe Render (poate dura până la 50s)...</span>
+                </div>
+            )}
             <section className="modern-login-shell">
                 <aside className="modern-login-hero">
                     <div className="modern-login-badge">UTCN • AC Portal</div>
