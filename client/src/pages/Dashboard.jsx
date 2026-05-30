@@ -2,10 +2,49 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { API_BASE_URL } from '../config';
+import GradeChart from '../components/GradeChart';
+
+const AcademicCountdown = () => {
+  const targetDate = new Date('2026-06-15T08:00:00');
+  const now = new Date();
+  const diffTime = targetDate - now;
+  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+  const daysLeft = Math.max(0, diffDays);
+
+  const totalSemesterDays = 98; // 14 săptămâni
+  const progressPercent = Math.min(100, Math.max(0, ((totalSemesterDays - daysLeft) / totalSemesterDays) * 100));
+
+  return (
+    <div className="card" style={{ padding: '1.25rem', position: 'relative' }}>
+      <h3 style={{ fontSize: '1.05rem', fontWeight: '600', marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+        📅 Numărătoare Inversă Sesiune
+      </h3>
+      <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.9rem', marginBottom: '0.5rem' }}>
+        <span style={{ fontWeight: '700', color: 'var(--accent-primary)' }}>
+          {daysLeft > 0 ? `${daysLeft} zile rămase` : 'Sesiunea a început!'}
+        </span>
+        <span style={{ color: 'var(--text-secondary)', fontWeight: '500' }}>15 Iunie 2026</span>
+      </div>
+      <div style={{ width: '100%', height: '8px', backgroundColor: 'var(--border-color)', borderRadius: '4px', overflow: 'hidden' }}>
+        <div style={{ 
+          width: `${progressPercent}%`, 
+          height: '100%', 
+          background: 'var(--accent-gradient)', 
+          borderRadius: '4px',
+          transition: 'width 1s ease-in-out' 
+        }} />
+      </div>
+      <p style={{ fontSize: '0.78rem', color: 'var(--text-secondary)', marginTop: '0.5rem', margin: 0 }}>
+        Semestrul II • Săptămâna 12 din 14
+      </p>
+    </div>
+  );
+};
+
 
 
 const Dashboard = () => {
-  const { user, token, theme } = useAuth();
+  const { user, token, theme, isServerWaking } = useAuth();
   const [grades, setGrades] = useState([]);
   const [subjects, setSubjects] = useState([]);
   const [announcements, setAnnouncements] = useState([]);
@@ -156,64 +195,101 @@ const Dashboard = () => {
           </div>
         </div>
 
-        {/* Coloana Dreaptă: Profil / Comenzi rapide */}
-        <div>
-          <h2>Profilul Meu</h2>
-          <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: '1rem', position: 'relative', overflow: 'hidden' }}>
-            <img 
-              src={theme === 'dark' 
-                ? 'https://res.cloudinary.com/donhemyhq/image/upload/v1780085546/logo4_xvuart.png' 
-                : 'https://res.cloudinary.com/donhemyhq/image/upload/v1780085249/utcnlogo_lmiu8r.png'
-              } 
-              alt="UTCN Seal" 
-              style={{ 
-                position: 'absolute', 
-                right: '-10px', 
-                top: '-10px', 
-                height: '80px', 
-                opacity: 0.15,
-                pointerEvents: 'none'
-              }} 
-            />
-            <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem', zIndex: 1 }}>
-              <div style={{
-                width: '60px',
-                height: '60px',
-                borderRadius: '50%',
-                background: 'var(--accent-gradient)',
-                color: 'white',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                fontSize: '1.5rem',
-                fontWeight: '700'
-              }}>
-                {user.name.charAt(0)}
-              </div>
-              <div>
-                <div style={{ fontWeight: '600', fontSize: '1.1rem' }}>{user.name}</div>
-                <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
-                  Rol: {user.role === 'teacher' ? 'Cadru Didactic' : 'Student'}
+        {/* Coloana Dreaptă: Profil / Comenzi rapide / Grafice */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+          
+          {/* Widget Countdown */}
+          <AcademicCountdown />
+
+          {/* Profil Utilizator */}
+          <div>
+            <h2 style={{ marginBottom: '1rem' }}>Profilul Meu</h2>
+            <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: '1rem', position: 'relative', overflow: 'hidden' }}>
+              <img 
+                src={theme === 'dark' 
+                  ? 'https://res.cloudinary.com/donhemyhq/image/upload/v1780085546/logo4_xvuart.png' 
+                  : 'https://res.cloudinary.com/donhemyhq/image/upload/v1780085249/utcnlogo_lmiu8r.png'
+                } 
+                alt="UTCN Seal" 
+                style={{ 
+                  position: 'absolute', 
+                  right: '-10px', 
+                  top: '-10px', 
+                  height: '80px', 
+                  opacity: 0.15,
+                  pointerEvents: 'none'
+                }} 
+              />
+              <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem', zIndex: 1 }}>
+                <div style={{
+                  width: '60px',
+                  height: '60px',
+                  borderRadius: '50%',
+                  background: 'var(--accent-gradient)',
+                  color: 'white',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  fontSize: '1.5rem',
+                  fontWeight: '700'
+                }}>
+                  {user.name.charAt(0)}
+                </div>
+                <div>
+                  <div style={{ fontWeight: '600', fontSize: '1.1rem' }}>{user.name}</div>
+                  <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
+                    Rol: {user.role === 'teacher' ? 'Cadru Didactic' : 'Student'}
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '1rem', fontSize: '0.9rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-              <div>📧 <strong>Email:</strong> {user.email}</div>
-              {user.role === 'student' && (
-                <>
-                  <div>🏫 <strong>Grupa:</strong> {user.group}</div>
-                  <div>📚 <strong>Specializare:</strong> {user.specialization}</div>
-                </>
-              )}
-            </div>
+              <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '1rem', fontSize: '0.9rem', display: 'flex', flexDirection: 'column', gap: '0.5rem', zIndex: 1 }}>
+                <div>📧 <strong>Email:</strong> {user.email}</div>
+                {user.role === 'student' && (
+                  <>
+                    <div>🏫 <strong>Grupa:</strong> {user.group}</div>
+                    <div>📚 <strong>Specializare:</strong> {user.specialization}</div>
+                  </>
+                )}
+              </div>
 
-            <Link to="/grades" className="btn btn-secondary" style={{ textDecoration: 'none', justifyContent: 'center', marginTop: '0.5rem' }}>
-              {user.role === 'student' ? '📈 Vezi Situația Școlară' : '⚙️ Administrează Notele'}
-            </Link>
+              <Link to="/grades" className="btn btn-secondary" style={{ textDecoration: 'none', justifyContent: 'center', marginTop: '0.5rem', zIndex: 1 }}>
+                {user.role === 'student' ? '📈 Vezi Situația Școlară' : '⚙️ Administrează Notele'}
+              </Link>
+            </div>
           </div>
+
+          {/* Grafic distributie note */}
+          <GradeChart grades={grades} />
         </div>
       </div>
+
+      {/* Alerta de Cold Start Render */}
+      {isServerWaking && (
+        <div style={{
+          position: 'fixed',
+          bottom: '24px',
+          left: '50%',
+          transform: 'translateX(-50%)',
+          backgroundColor: 'var(--warning)',
+          color: '#0f172a',
+          padding: '0.9rem 1.5rem',
+          borderRadius: '16px',
+          boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.15)',
+          zIndex: 9999,
+          display: 'flex',
+          alignItems: 'center',
+          gap: '0.75rem',
+          fontWeight: '700',
+          fontSize: '0.9rem',
+          border: '1px solid rgba(245, 158, 11, 0.3)',
+          backdropFilter: 'blur(8px)',
+          animation: 'fadeInUp 0.3s ease-out'
+        }}>
+          <span>⏳</span>
+          <span>Se trezește serverul de pe Render (poate dura până la 50s)...</span>
+        </div>
+      )}
     </div>
   );
 };
